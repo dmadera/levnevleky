@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+
 .site-wrapper {
   display: table;
   width: 100%;
@@ -8,6 +10,11 @@
 }
 
 .site-wrapper-inner {
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.site-wrapper-inner-bottom {
   display: table-cell;
   vertical-align: bottom;
 }
@@ -28,4 +35,36 @@
 .list-group-item img {
   margin-right: 15px;
   width: 25px;
+}
+
+.my-container {
+  //@media screen and (max-width: $break-small) {
+  //display: table;
+  //}
+  margin: 100px 80px 0 80px;
+}
+
+.family {
+  text-align: right;
+}
+
+.family img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 50px;
+}
+
+.title {
+  position: absolute;
+  bottom: 2vw;
+  right: 0;
+}
+
+.title h1 {
+  padding: 0.5em;
+  color: black;
+  font-size: calc(20px + 2vw);
+  font-style: bold;
+  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.3);
 }
