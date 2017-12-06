@@ -9,6 +9,10 @@
   width: 11vw;
 }
 
+.navbar:not(.top) .logo img {
+  max-width: 180px;
+}
+
 .navbar ul.navbar-nav {
   font-size: 1.2em;
 }
