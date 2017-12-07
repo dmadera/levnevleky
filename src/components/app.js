@@ -2,7 +2,7 @@ import React from 'react';
 import 'assets/scss/app.scss';
 
 import Navbar from 'components/navbar.js';
-import Welcome from 'components/welcome.js';
+import Welcome from 'components/welcome.jsx';
 
 class App extends React.PureComponent {
   render() {

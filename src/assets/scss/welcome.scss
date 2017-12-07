@@ -29,13 +29,21 @@
 }
 
 .card {
+  @media screen and (max-width: 991px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (max-width: 574px) {
+    height: auto;
+  }
+
   opacity: 0.75;
   height: 250px;
 }
 
 .list-group-item img,
 .table img {
-  width: 25px;
+  width: 21px;
 }
 
 .my-container {
@@ -70,6 +78,71 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-.sjezdovky .list-group-item {
-  padding: 0.75em;
+.table td {
+  padding: 0.4em;
+}
+
+.table img.check {
+  width: 16px;
+}
+
+.btn {
+  font-size: 0.9em;
+}
+
+.aktualizace {
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+}
+
+.full-height a {
+  margin-top: 3px;
+}
+
+.vleky .table {
+  margin-bottom: 0;
+}
+
+.vleky .table tr:first-child td {
+  color: rgb(72, 159, 124);
+}
+
+.vleky .table tr:last-child td {
+  color: rgb(184, 14, 14);
+}
+
+.sjezdovky .table {
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.kamery .row {
+  margin: 0;
+  vertical-align: middle;
+}
+
+.kamery .row > div {
+  padding: 0;
+}
+
+.kamery .row > div > div {
+  margin-top: 6px;
+}
+
+@media screen and (min-width: 576px) {
+  .kamery .row > div:first-child > div {
+    padding-left: 6px;
+    padding-right: 3px;
+  }
+
+  .kamery .row > div:last-child > div {
+    padding-left: 3px;
+    padding-right: 6px;
+  }
+}
+
+.kamery img {
+  width: 100%;
 }
