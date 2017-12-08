@@ -14,6 +14,28 @@ import camera2 from 'assets/img/camera2.jpg';
 import Navbar from 'components/navbar.js';
 
 class Welcome extends React.PureComponent {
+
+  componentWillMount() {
+    (function(d,s,id){
+      var js,fjs=d.getElementsByTagName(s)[0];
+      if(!d.getElementById(id)){
+        js=d.createElement(s);
+        js.id=id;
+        js.src="https://weatherwidget.io/js/widget.min.js";
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }
+    (document,"script","weatherwidget-io-js"));
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+              fjs.parentNode.insertBefore(js, fjs);
+
+    }(document, 'script', 'facebook-jssdk'));
+  }
+
   render() {
     return (
       <section class="welcome site-wrapper">
@@ -25,11 +47,16 @@ class Welcome extends React.PureComponent {
                   <img src={family} />
                 </div>
                 <div class="col-md-6 title">
-                  <h1 class="card">Užijte si rodinné lyžování zcela bez front!</h1>
+                  <div class="">
+                    <h1>
+                      Lyžování v srdci Krkonoš
+                    </h1>
+                    <p>U nás nestojíte fronty, u nás lyžujete.</p>
+                  </div>
                 </div>
                 {/*</section>*/}
             </div>
-            <div class="row">
+            <div class="row news">
               <div class="col-lg-6">
                 <div class="row">
                   <div class="col-sm-6">
@@ -56,7 +83,38 @@ class Welcome extends React.PureComponent {
                     </div>
                   </div>
                   <div class="col-sm-6">
-                    <div class="card sjezdovky">
+                    <div class="card info">
+                      <div class="card-header">Další informace</div>
+                      <div  class="row">
+                        <div class="col-6">
+                          <div>
+                            <i class="fa fa-ticket fa-2x" aria-hidden="true"></i>
+                          skipass
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div>
+                            <i class="fa fa-map-o fa-2x" aria-hidden="true"></i>
+                            skimapa
+                          </div>
+                        </div>
+                      </div>
+                      <div  class="row">
+                        <div class="col-6">
+                          <div>
+                            <i class="fa fa-bed fa-2x" aria-hidden="true"></i>
+                            ubytovnání
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div>
+                            <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
+                            občerstvení
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {/*<div class="card sjezdovky">
                       <div class="card-header">Sjezdovky</div>
                       <table class="table">
                         <tr>
@@ -83,7 +141,7 @@ class Welcome extends React.PureComponent {
                       <div class="text-center">
                         <a href="#" class="btn btn-dark">Mapa areálu</a>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -91,7 +149,8 @@ class Welcome extends React.PureComponent {
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="card">
-                      <span class="card-header">Počasí</span>
+                      <a class="weatherwidget-io" href="https://forecast7.com/cs/50d6515d66/dolni-dvur/" data-label_1="DOLNÍ DVŮR" data-label_2="Počasí" data-font="Helvetica" data-days="5" data-theme="pure">DOLNÍ DVŮR Počasí</a>
+                      {/* <span class="card-header">Počasí</span>
                       <table class="table">
                         <tr>
                           <td>Teplota: 0.3 °C</td>
@@ -109,7 +168,7 @@ class Welcome extends React.PureComponent {
                           <td>Sníh: 10 cm technický</td>
                         </tr>
                       </table>
-                      <span class="aktualizace">10:00 10.11.2017</span>
+                      <span class="aktualizace">10:00 10.11.2017</span> */}
                     </div>
 
                   </div>
