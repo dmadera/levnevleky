@@ -1,9 +1,9 @@
 import React from 'react';
 import 'assets/scss/welcome.scss';
-import lift from 'assets/img/lift-icon.png';
-import open from 'assets/img/opened.svg';
-import close from 'assets/img/closed.svg';
-import check from 'assets/img/check.svg';
+import kotva from 'assets/img/icon-kotva.svg';
+import poma from 'assets/img/icon-poma.svg';
+import close from 'assets/img/closed-blur.svg';
+import open from 'assets/img/open-blur.svg';
 import family from 'assets/img/family.png';
 import track1 from 'assets/img/track1.svg';
 import track2 from 'assets/img/track2.svg';
@@ -43,7 +43,7 @@ class Welcome extends React.PureComponent {
           <div class="inner">
             <div class="row position-relative">
               {/*<section class="jumbotron text-center">*/}
-                <div class="col-md-6 family">
+                {/*<div class="col-md-6 family">
                   <img src={family} />
                 </div>
                 <div class="col-md-6 title">
@@ -51,70 +51,83 @@ class Welcome extends React.PureComponent {
                     <h1>
                       Lyžování v srdci Krkonoš
                     </h1>
-                    <p>U nás nestojíte fronty, u nás lyžujete.</p>
+                    <p class="caption"><span class="quote">"</span>U nás nestojíte fronty, u nás lyžujete.<span class="quote">"</span></p>
                   </div>
-                </div>
-                {/*</section>*/}
-            </div>
+                </div>*/}
+              </div>
+                <section class="heading text-center">
+                  <h1>Lyžování v srdci Krkonoš</h1>
+                  <h2><span class="quotes">"</span>U nás nestojíte fronty, u nás lyžujete.<span class="quotes">"</span></h2>
+               </section>
+
             <div class="row news">
               <div class="col-lg-6">
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="card vleky">
                       <div class="card-header">Vleky</div>
-                      <table class="table">
+                      <table class="table lifts">
                         <tr>
-                          <td><img src={lift} /></td>
+                          <td class="lift"><img src={kotva} /></td>
                           <td>KOTVA</td>
                           <td>500m</td>
-                          <td><img src={check} /></td>
+                          <td><img src={open} /></td>
                         </tr>
                         <tr>
-                          <td><img src={lift} /></td>
+                          <td class="lift"><img src={poma} /></td>
                           <td>POMA</td>
                           <td>300m</td>
-                          <td><img src={check} /></td>
+                          <td><img src={close} /></td>
                         </tr>
                       </table>
-                      <div class="card-header">Zasněžování</div>
-                      <div class="card-footer">
-                        <a href="#" class="btn btn-dark">Více o areálu</a>
+                      <div class="card-header extra-border-top">Aktuální počasí</div>
+                      <div class="curweather">
+                        <div class="row">
+                          <div class="col-4">
+                            <span class="icon"><i class="fa fa-thermometer-half fa-2x" /></span>
+                            <span class="icon-text"><span>3°C<br/>(2°C)</span></span>
+                          </div>
+                          <div class="col-8">
+                            <span class="icon"><i class="fa fa-snowflake-o fa-2x" /></span>
+                            <span class="icon-text"><span>40-50cm<br/>technicky</span></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                    <div class="card info">
-                      <div class="card-header">Další informace</div>
-                      <div  class="row">
-                        <div class="col-6">
-                          <div>
-                            <i class="fa fa-ticket fa-2x" aria-hidden="true"></i>
-                          skipass
+                    <div class="col-sm-6">
+                      <div class="card info">
+                        <div class="card-header">Další informace</div>
+                        <div  class="row">
+                          <div class="col-6">
+                            <div>
+                              <i class="fa fa-ticket fa-2x" aria-hidden="true"></i>
+                              skipass
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div>
+                              <i class="fa fa-map-o fa-2x" aria-hidden="true"></i>
+                              skimapa
+                            </div>
                           </div>
                         </div>
-                        <div class="col-6">
-                          <div>
-                            <i class="fa fa-map-o fa-2x" aria-hidden="true"></i>
-                            skimapa
+                        <div  class="row">
+                          <div class="col-6">
+                            <div>
+                              <i class="fa fa-bed fa-2x" aria-hidden="true"></i>
+                              ubytovnání
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div>
+                              <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
+                              občerstvení
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div  class="row">
-                        <div class="col-6">
-                          <div>
-                            <i class="fa fa-bed fa-2x" aria-hidden="true"></i>
-                            ubytovnání
-                          </div>
-                        </div>
-                        <div class="col-6">
-                          <div>
-                            <i class="fa fa-cutlery fa-2x" aria-hidden="true"></i>
-                            občerstvení
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    {/*<div class="card sjezdovky">
+                      {/*<div class="card sjezdovky">
                       <div class="card-header">Sjezdovky</div>
                       <table class="table">
                         <tr>
@@ -196,7 +209,7 @@ class Welcome extends React.PureComponent {
         </div>
       </section>
       );
- }
-}
+      }
+      }
 
-export default Welcome;
+      export default Welcome;

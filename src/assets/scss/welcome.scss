@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
 
 .site-wrapper {
   display: table;
@@ -26,6 +27,41 @@
 
 .inner {
   padding: 2rem;
+}
+
+.heading {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 120px;
+
+  @media screen and (max-width: 991px) {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+}
+
+.heading > h1 {
+  font-size: 4.3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+
+  @media screen and (max-width: 991px) {
+    font-size: 2.5em;
+  }
+
+}
+
+.heading > h2 {
+  font-size: 2.5em;
+  //font-style: italic;
+  font-family: 'Pacifico', cursive;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
+
+  @media screen and (max-width: 991px) {
+    font-size: 1.5em;
+  }
 }
 
 .news .card {
@@ -112,20 +148,92 @@
   right: 3px;
 }
 
+.extra-border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding-top: 16px;
+}
+
 .full-height a {
   margin-top: 3px;
+}
+
+.kamery img {
+  width: 100%;
 }
 
 .vleky .table {
   margin-bottom: 0;
 }
 
-.vleky .table tr:first-child td {
-  color: rgb(72, 159, 124);
+.vleky .table .lift {
+  padding: 3px 10px 3px 10px;
+  height: 40px;
+  width: 40px;
 }
 
-.vleky .table tr:last-child td {
-  color: rgb(184, 14, 14);
+.vleky .table .lift img {
+  border-radius: 0.25rem;
+  padding: 3px;
+  display: block;
+  width: auto;
+  height: 100%;
+  background: #a0a0a0;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.vleky .table.lifts tr:first-child td.lift img {
+  //background: rgb(72, 159, 124);
+}
+
+.vleky .table.lifts tr:last-child td.lift img {
+  //background: rgb(184, 14, 14);
+}
+
+.info i {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.curweather .row {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.curweather .icon {
+  line-height: 70px;
+  margin: 0 15px 0 10px;
+  display: inline-block;
+}
+
+.curweather .col-8,
+.curweather .col-4 {
+  padding: 0;
+  text-align: center;
+}
+
+.curweather .icon i {
+  vertical-align: middle;
+}
+
+.curweather .icon-text {
+  height: 70px;
+  line-height: 70px;
+}
+
+.curweather .icon-text span {
+  display: inline-block;
+  text-align: center;
+  line-height: normal;
+  vertical-align: middle;
+}
+
+.vleky .table.lifts tr:first-child td {
+  //color: rgb(72, 159, 124);
+}
+
+.vleky .table.lifts tr:last-child td {
+  //color: rgb(184, 14, 14);
 }
 
 .sjezdovky .table {
@@ -158,10 +266,6 @@
   }
 }
 
-.kamery img {
-  width: 100%;
-}
-
 .info .row {
   margin: 18px 0 15px 0;
 }
@@ -172,10 +276,4 @@
 
 .info > div .col-6 > div {
   text-align: center;
-}
-
-.info i {
-  display: block;
-  width: 100%;
-  margin-bottom: 10px;
 }
