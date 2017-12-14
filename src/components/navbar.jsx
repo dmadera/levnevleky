@@ -2,10 +2,7 @@ import React from 'react';
 import 'assets/scss/navbar.scss';
 import logo from 'assets/img/logo.svg';
 
-//const CSSTransitionGroup = React.addons.CSSTransitionGroup;
-//const TransitionGroup = React.addons.TransitionGroup;
-
-class Navbar  extends React.Component {
+class Component  extends React.Component {
 
   constructor(props) {
     super(props);
@@ -30,7 +27,7 @@ class Navbar  extends React.Component {
       + (this.state.navbar ? '' : ' top');
     return (
       <nav class={className}>
-        <a class="" href="#">
+        <a href="#">
           <h1 class="navbar-brand logo text-hide">
             SKI AREÁL Luisino údolí
             <img src={logo} alt="SKI AREÁL Luisino údolí" />
@@ -58,13 +55,13 @@ class Navbar  extends React.Component {
               <a class="nav-link" href="#">Půjčovna</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Půjčovna</a>
+              <a class="nav-link" href="#">Kontakt</a>
             </li>
           </ul>
         </div>
       </nav>
-      );
-}
+    );
+  }
 }
 
-export default Navbar;
+export default Component;

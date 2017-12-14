@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg4825"
+   viewBox="0 0 400.00139 400"
+   version="1.1"
+   height="400"
+   width="400">
+  <metadata
+     id="metadata4831">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4829" />
+  <g
+     style="fill:#ffffff;fill-opacity:1;shape-rendering:auto"
+     id="g4823"
+     transform="matrix(0.66713738,0,0,0.60169604,5.3934933,-243.98944)">
+    <path
+       id="path4817"
+       style="color:#000000;isolation:auto;mix-blend-mode:normal;solid-color:#000000;fill:#ffffff;fill-opacity:1;color-rendering:auto;image-rendering:auto"
+       d="m 262.16,415.93 v 78.658 l -60.881,-35.15 -30.715,53.197 91.596,52.883 v 336.08 l -91.596,52.883 30.715,53.197 60.881,-35.15 v 79.83 h 61.43 V 971.54 l 58.93,34.023 30.713,-53.197 L 323.59,900.61 V 566.5 l 89.643,-51.756 -30.713,-53.197 -58.93,34.023 v -79.646 h -61.43 z" />
+    <path
+       id="path4819"
+       style="color:#000000;isolation:auto;mix-blend-mode:normal;solid-color:#000000;fill:#ffffff;fill-opacity:1;color-rendering:auto;image-rendering:auto"
+       d="M 423.06,518.31 V 624.08 L 132.01,792.12 40.412,739.237 9.699,792.434 70.582,827.584 1.447,867.5 32.16,920.699 102.15,880.291 v 68.045 h 61.428 v -103.51 l 289.34,-167.05 89.643,51.756 30.715,-53.197 -58.93,-34.023 68.975,-39.822 -30.715,-53.199 -68.119,39.328 V 518.32 l -61.428,-0.002 z" />
+    <path
+       id="path4821"
+       style="color:#000000;isolation:auto;mix-blend-mode:normal;solid-color:#000000;fill:#ffffff;fill-opacity:1;color-rendering:auto;image-rendering:auto"
+       d="m 99.85,518.07 v 70.299 L 30.715,548.455 0,601.654 l 69.99,40.408 -58.93,34.023 30.713,53.197 89.645,-51.756 289.34,167.05 v 103.51 h 61.428 v -68.045 l 68.975,39.822 30.715,-53.199 -68.121,-39.33 60.883,-35.15 -30.713,-53.197 -91.596,52.883 -291.05,-168.04 V 518.06 H 99.851 Z" />
+  </g>
+</svg>

@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=EB+Garamond|Cardo:400italic);
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
 
 .site-wrapper {
@@ -20,17 +19,13 @@
   vertical-align: bottom;
 }
 
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .inner {
   padding: 2rem;
 }
 
 .heading {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 100px;
   margin-top: 120px;
 
@@ -38,7 +33,6 @@
     margin-top: 30px;
     margin-bottom: 20px;
   }
-
 }
 
 .heading > h1 {
@@ -50,7 +44,6 @@
   @media screen and (max-width: 991px) {
     font-size: 2.5em;
   }
-
 }
 
 .heading > h2 {
@@ -64,7 +57,7 @@
   }
 }
 
-.news .card {
+.welcome .card {
   @media screen and (max-width: 991px) {
     margin-top: 10px;
   }
@@ -77,7 +70,7 @@
   height: 250px;
 }
 
-.card-header {
+.welcome .card .card-header {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.92em;
@@ -85,48 +78,8 @@
   text-align: center;
 }
 
-.opacity {
-  opacity: 0.75;
-}
-
-.list-group-item img,
 .table img {
   width: 21px;
-}
-
-.my-container {
-  //@media screen and (max-width: $break-small) {
-  //display: table;
-  //}
-  margin: 100px 80px 0 80px;
-}
-
-.family {
-  text-align: right;
-}
-
-.family img {
-  width: 100%;
-  max-width: 800px;
-  margin-top: 50px;
-}
-
-.title {
-  position: absolute;
-  bottom: 2vw;
-  right: 0;
-}
-
-.title h1 {
-  padding: 0.5em;
-  color: black;
-  font-size: calc(20px + 2vw);
-  font-style: bold;
-  text-shadow: 0.07em 0.07em 0 rgba(0, 0, 0, 0.1);
-}
-
-.title p {
-  padding-left: 22.4px;
 }
 
 .table td {
@@ -137,56 +90,37 @@
   width: 16px;
 }
 
-.btn {
-  font-size: 0.9em;
-}
-
-.aktualizace {
-  font-size: 0.7em;
-  position: absolute;
-  bottom: 2px;
-  right: 3px;
-}
-
-.extra-border-top {
+.card .card-header:nth-child(n+2) {
   border-top: 1px solid rgba(0, 0, 0, 0.125);
-  padding-top: 16px;
-}
-
-.full-height a {
-  margin-top: 3px;
+  padding: 10px 0 7px 0;
 }
 
 .kamery img {
   width: 100%;
 }
 
-.vleky .table {
-  margin-bottom: 0;
+.areal .lifts {
+  margin: 7px 0 10px 0;
 }
 
-.vleky .table .lift {
+.areal .lifts tr:first-child td {
+  border-top: 0;
+}
+
+.areal .lifts .icon {
   padding: 3px 10px 3px 10px;
   height: 40px;
   width: 40px;
 }
 
-.vleky .table .lift img {
+.areal .icon img {
   border-radius: 0.25rem;
-  padding: 3px;
   display: block;
+  padding: 2px;
   width: auto;
   height: 100%;
   background: #a0a0a0;
   border: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-.vleky .table.lifts tr:first-child td.lift img {
-  //background: rgb(72, 159, 124);
-}
-
-.vleky .table.lifts tr:last-child td.lift img {
-  //background: rgb(184, 14, 14);
 }
 
 .info i {
@@ -195,54 +129,45 @@
   margin-bottom: 10px;
 }
 
-.curweather .row {
-  margin: 0;
-  font-size: 0.8rem;
-}
-
-.curweather .icon {
-  line-height: 70px;
-  margin: 0 15px 0 10px;
-  display: inline-block;
-}
-
-.curweather .col-8,
-.curweather .col-4 {
-  padding: 0;
-  text-align: center;
-}
-
-.curweather .icon i {
-  vertical-align: middle;
-}
-
-.curweather .icon-text {
-  height: 70px;
-  line-height: 70px;
-}
-
-.curweather .icon-text span {
-  display: inline-block;
-  text-align: center;
-  line-height: normal;
-  vertical-align: middle;
-}
-
-.vleky .table.lifts tr:first-child td {
-  //color: rgb(72, 159, 124);
-}
-
-.vleky .table.lifts tr:last-child td {
-  //color: rgb(184, 14, 14);
-}
-
-.sjezdovky .table {
-  margin-bottom: 0.5em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+.info .row {
+  margin: 18px 0 15px 0;
 }
 
 .kamery .row {
   margin: 0;
+  vertical-align: middle;
+}
+
+.areal .curweather .row {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.areal .curweather .icon {
+  line-height: 50px;
+  margin: 0 15px 0 10px;
+  display: inline-block;
+}
+
+.areal .curweather .col-8,
+.areal .curweather .col-4 {
+  padding: 0;
+  text-align: center;
+}
+
+.areal .curweather .icon i {
+  vertical-align: middle;
+}
+
+.areal .curweather .icon-text {
+  height: 60px;
+  line-height: 60px;
+}
+
+.areal .curweather .icon-text span {
+  display: inline-block;
+  text-align: center;
+  line-height: normal;
   vertical-align: middle;
 }
 
@@ -264,10 +189,6 @@
     padding-left: 3px;
     padding-right: 6px;
   }
-}
-
-.info .row {
-  margin: 18px 0 15px 0;
 }
 
 .info .col-6 {
