@@ -15,29 +15,20 @@ class Component extends React.PureComponent {
         <div className="site-wrapper">
           <div class="site-wrapper-inner">
             <div class="inner">
-              <div class="row position-relative">
+              <div class="row">
                 <Heading />
-                <div class="row">
-                  <div class="col-lg-6">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <CardAreal />
-                      </div>
-                      <div class="col-sm-6">
-                        <CardNavigation />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <CardWeather />
-                      </div>
-                      <div class="col-sm-6">
-                        <CardCams />
-                      </div>
-                    </div>
-                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+<CardAreal />
+                </div>
+                <div class="col-lg-3">
+                </div>
+                <div class="col-lg-3">
+
+                </div>
+                <div class="col-lg-3">
+                  <CardWeather />
                 </div>
               </div>
             </div>

@@ -1,3 +1,13 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
 .about {
   color: black;
+
+  img {
+    border-radius: 0.25rem;
+    //box-shadow: 3px 3px #818181;
+  }
+  .carousel {
+    margin: 0 auto;
+  }
 }

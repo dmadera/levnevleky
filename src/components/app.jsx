@@ -12,6 +12,15 @@ class App extends React.PureComponent {
         <Navbar />
         <Welcome />
         <About />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     );
   }
