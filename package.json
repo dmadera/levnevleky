@@ -64,6 +64,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
+    "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
     "react-bootstrap": "^0.31.5"
   },
