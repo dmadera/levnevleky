@@ -3,6 +3,7 @@ import 'assets/scss/app.scss';
 
 import Navbar from 'components/navbar';
 import Welcome from 'components/welcome';
+import About from 'components/about';
 
 class App extends React.PureComponent {
   render() {
@@ -10,14 +11,7 @@ class App extends React.PureComponent {
       <div className="app">
         <Navbar />
         <Welcome />
-        <div class="nextpage">
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </div>
+        <About />
       </div>
     );
   }
