@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald');
 
 a,
 a:focus,
@@ -10,8 +10,11 @@ body {
   min-width: 350px;
   min-height: 400px;
   color: #000;
-  background: linear-gradient(#fff, #343a40);
   //background-color: #818181;
+}
+
+section {
+  background: linear-gradient(#767676, #565656);
 }
 
 img {
@@ -22,6 +25,7 @@ img {
   margin: 20px 10px 20px 10px;
   text-transform: uppercase;
   font-size: 2em;
-  font-weight: 700;
+  font-family: 'Oswald', sans-serif;
+  color: #e5e8ed;
 }
 

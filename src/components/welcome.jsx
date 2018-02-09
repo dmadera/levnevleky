@@ -20,7 +20,7 @@ class Component extends React.PureComponent {
               </div>
               <div class="row">
                 <div class="col-lg-3">
-<CardAreal />
+                  <CardAreal />
                 </div>
                 <div class="col-lg-3">
                 </div>
