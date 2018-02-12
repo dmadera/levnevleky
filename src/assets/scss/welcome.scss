@@ -35,9 +35,10 @@
   }
 
   .heading > h1 {
-    font-size: 4.3em;
-    font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
+    font-family: Oswald, sans-serif;
     font-weight: bold;
+    color: #1a1a1a;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
 
     @media screen and (max-width: 991px) {
@@ -49,6 +50,7 @@
     font-size: 2.5em;
     //font-style: italic;
     font-family: 'Pacifico', cursive;
+    color: #1a1a1a;
     text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
 
     @media screen and (max-width: 991px) {
@@ -63,6 +65,14 @@
 
     @media screen and (max-width: 574px) {
       height: auto;
+    }
+
+    * {
+      color: #434343;
+    }
+
+    *:not(.fa) {
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     }
 
     opacity: 0.75;
@@ -83,6 +93,7 @@
 
   .table td {
     padding: 0.4em;
+    vertical-align: bottom;
   }
 
   .table img.check {

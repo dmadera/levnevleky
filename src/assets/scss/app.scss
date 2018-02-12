@@ -6,15 +6,21 @@ a:hover {
   color: #fff;
 }
 
+* {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+
 body {
   min-width: 350px;
   min-height: 400px;
   color: #000;
-  //background-color: #818181;
+  background: #000;
 }
 
-section {
+.page {
   background: linear-gradient(#767676, #565656);
+  padding: 10px 0 30px;
 }
 
 img {

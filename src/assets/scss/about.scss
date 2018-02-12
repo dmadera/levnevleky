@@ -10,4 +10,57 @@
   .carousel {
     margin: 0 auto;
   }
+
+  .carousel-inner {
+    height: 100%;
+  }
+
+  .carousel-item {
+    position: relative;
+    height: 100%;
+    padding: 15px;
+  }
+
+  .carousel-item.food {
+
+    h5 {
+      font-size: 2em;
+    }
+
+    h7 {
+      font-size: 1.3em;
+    }
+
+    img.restaurant {
+      position: absolute;
+      top: 10em;
+      right: 4em;
+      width: 26em;
+    }
+
+    p.restaurant, p.skibar {
+      position: absolute;
+      width: 12em;
+      font-size: 1.3em;
+    }
+
+    p.restaurant {
+      top: 22em;
+      left: 26em;
+    }
+
+    p.skibar {
+      top: 9em;
+      left: 6em;
+    }
+
+
+    img.skibar {
+      position: absolute;
+      top: 22em;
+      left: 5em;
+      width: 22em;
+    }
+
+  }
 }
