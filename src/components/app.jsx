@@ -5,6 +5,7 @@ import Navbar from 'components/navbar';
 import Welcome from 'components/welcome';
 import About from 'components/about';
 import ChildOnBob from 'components/child-on-bob';
+import PriceList from 'components/price-list';
 
 class App extends React.PureComponent {
   render() {
@@ -13,6 +14,7 @@ class App extends React.PureComponent {
         <Navbar />
         <Welcome />
         <About />
+        <PriceList />
         <ChildOnBob />
         <br />
         <br />

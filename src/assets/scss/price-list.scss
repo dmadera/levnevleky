@@ -1,0 +1,23 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+.price-list {
+  * {
+    letter-spacing: 1px;
+    color: black;
+  }
+
+  table {
+
+    th {
+      text-align: center;
+    }
+
+    td:nth-child(n+2) {
+      text-align: right;
+    }
+
+    td:not(.no-unit):nth-child(n+2):after {
+      content: " Kč";
+    }
+  }
+}

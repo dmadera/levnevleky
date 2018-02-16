@@ -16,7 +16,7 @@ class Component extends React.PureComponent {
           <div className="col-lg-6">
             <img src={skimap} />
           </div>
-          <div id="carouselAbout" className="col-lg-6 carousel slide" data-ride="carousel" data-interval="false">
+          <div id="carouselAbout" className="col-lg-6 carousel slide" data-ride="carousel" data-interval="6000">
             <ol className="carousel-indicators">
               <li data-target="#carouselAbout" data-slide-to="0" className="active"></li>
               <li data-target="#carouselAbout" data-slide-to="1" className="active"></li>
