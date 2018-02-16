@@ -19,18 +19,21 @@
     position: relative;
     height: 100%;
     padding: 15px;
-  }
-
-  .carousel-item.food {
 
     h5 {
-      font-size: 2em;
+      font-size: 2.5em;
     }
 
-    h7 {
+    h6 {
       font-size: 1.3em;
     }
 
+    p {
+      font-size: 1.3em;
+    }
+  }
+
+  .carousel-item.food {
     img.restaurant {
       position: absolute;
       top: 10em;
@@ -41,7 +44,6 @@
     p.restaurant, p.skibar {
       position: absolute;
       width: 12em;
-      font-size: 1.3em;
     }
 
     p.restaurant {
@@ -54,6 +56,17 @@
       left: 6em;
     }
 
+    p.offer {
+      position: absolute;
+      bottom: 4px;
+      font-size: 0.8em;
+      color: black;
+
+      a {
+        text-decoration: none;
+        color: #333333;
+      }
+    }
 
     img.skibar {
       position: absolute;
@@ -62,5 +75,51 @@
       width: 22em;
     }
 
+  }
+  .carousel-item.equipment {
+
+    .panel {
+      display: block;
+      background: rgba(0, 0, 0, 0.2);
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+
+      span {
+        display: inline-block;
+        width: 70%;
+      }
+    }
+
+    p.snowmachine {
+      position: absolute;
+      left: 0;
+      top: 10em;
+      background: url('../img/about/snowmachine.png');
+      background-size: cover;
+      width: 20em;
+      height: 15em;
+
+      .panel {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+
+    p.groomer {
+      position: absolute;
+      right: 0;
+      top: 3em;
+      background: url('../img/about/groomer.png');
+      width: 22em;
+      height: 16em;
+    }
+
+    img.child {
+      position: absolute;
+      bottom: 2em;
+      left: 22em;
+      width: 27em;
+    }
   }
 }
