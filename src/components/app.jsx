@@ -7,6 +7,8 @@ import About from 'components/about';
 import ChildOnBob from 'components/child-on-bob';
 import PriceList from 'components/price-list';
 
+import Footer from 'components/footer';
+
 class App extends React.PureComponent {
   render() {
     return (
@@ -16,15 +18,7 @@ class App extends React.PureComponent {
         <About />
         <PriceList />
         <ChildOnBob />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <Footer />
       </div>
     );
   }

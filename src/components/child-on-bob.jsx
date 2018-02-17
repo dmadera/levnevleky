@@ -6,7 +6,7 @@ class Component extends React.PureComponent {
 
   render() {
     return (
-      <section className="page child-on-bob container-fluid">
+      <section className="page child-on-bob">
         <div class="motto">
           <p>
             U nás si své přijde opravdu každy!
