@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Oswald');
 
-a,
+a:not([href='']),
 a:focus,
 a:hover {
-  color: #fff;
+  color: #005999;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #07Cfff;
 }
 
 a[target="_blank"]:after {
@@ -13,14 +18,12 @@ a[target="_blank"]:after {
 
 
 * {
-  font-family: 'Oswald', sans-serif;
-  color: #ffffff;
+  font-family: Arial, sans-serif;
 }
 
 body {
   min-width: 350px;
   min-height: 400px;
-  color: #000;
 }
 
 .page {
@@ -30,6 +33,7 @@ body {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 ul {
