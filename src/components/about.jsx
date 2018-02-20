@@ -1,7 +1,7 @@
 import React from 'react';
 import 'assets/scss/about.scss';
 import PageTitle from 'components/page-title';
-import skimap from 'assets/img/skimap.png';
+import skimap from 'assets/img/about/skimap.png';
 import restaurant from  'assets/img/about/restaurant.png';
 import skibar from  'assets/img/about/skibar.png';
 import child from 'assets/img/about/child.png';

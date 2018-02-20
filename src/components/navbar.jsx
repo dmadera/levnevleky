@@ -27,11 +27,9 @@ class Component  extends React.Component {
       + (this.state.navbar ? '' : ' top');
     return (
       <nav class={className}>
-        <a href="#">
-          <h1 class="navbar-brand logo text-hide">
-            SKI AREÁL Luisino údolí
-            <img src={logo} alt="SKI AREÁL Luisino údolí" />
-          </h1>
+        <a href="#" className="navbar-brand logo">
+          <h1 className="text-hide">SKI AREÁL Luisino údolí</h1>
+          <img src={logo} alt="SKI AREÁL Luisino údolí" />
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button"
             data-toggle="collapse" data-target="#navbar"

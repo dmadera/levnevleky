@@ -5,6 +5,14 @@
   }
 
   table {
+    td, th {
+
+      border: 1px solid #8d734a;
+
+      @media screen and (max-width: 576px) {
+          padding: 6px;
+      }
+    }
 
     th {
       text-align: center;

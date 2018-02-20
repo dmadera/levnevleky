@@ -13,12 +13,18 @@ class App extends React.PureComponent {
   render() {
     return (
       <div className="app">
-        <Navbar />
-        <Welcome />
-        <About />
-        <PriceList />
-        <ChildOnBob />
-        <Footer />
+        <header>
+          <Navbar />
+        </header>
+        <main role="main">
+          <Welcome />
+          <About />
+          <PriceList />
+          <ChildOnBob />
+        </main>
+        <footer>
+          <Footer />
+        </footer>
       </div>
     );
   }

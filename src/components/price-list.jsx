@@ -1,10 +1,6 @@
 import React from 'react';
 import 'assets/scss/price-list.scss';
 import PageTitle from 'components/page-title';
-import skimap from 'assets/img/skimap.png';
-import restaurant from  'assets/img/about/restaurant.png';
-import skibar from  'assets/img/about/skibar.png';
-import child from 'assets/img/about/child.png';
 
 class Component extends React.PureComponent {
 
@@ -39,7 +35,7 @@ class Component extends React.PureComponent {
                 <tr><td>5 denní</td><td>390</td><td>290</td></tr>
                 <tr><td>6 denní</td><td>390</td><td>290</td></tr>
                 <tr><td>7 denní</td><td>390</td><td>290</td></tr>
-                <tr><th>Vyhodná rodinná nabídka</th><th colspan="2"></th></tr>
+                <tr><th>Rodinná nabídka</th><th colspan="2"></th></tr>
                 <tr><td>Rodinná 2 dospělí + 1 dítě</td><td colspan="2">940</td></tr>
                 <tr><td>Rodinná 2 dospělí + 2 děti</td><td colspan="2">1040</td></tr>
               </tbody>

@@ -16,19 +16,17 @@ a[target="_blank"]:after {
   content: " \f08e";
 }
 
-
-* {
-  font-family: Arial, sans-serif;
-}
-
 body {
-  min-width: 350px;
-  min-height: 400px;
+  min-width: 330px;
+  font-family: Arial, sans-serif;
+  background: #f4f7f6;
 }
 
 .page {
-  background: linear-gradient(#808080, #a0a0a0);
-  padding: 10px 0 30px;
+  //background: linear-gradient(#808080, #a0a0a0);
+  //background: url('../img/bg-snow-trees.jpg') no-repeat center center;
+  //background-size: cover;
+  margin: 20px 0;
 }
 
 img {
@@ -41,10 +39,14 @@ ul {
 }
 
 .page-title {
-  margin: 20px 10px 20px 10px;
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px 10px 20px 10px;
   text-transform: uppercase;
   font-size: 2em;
   font-family: 'Oswald', sans-serif;
-  color: #e5e8ed;
+  color: #8d734a;
+  border-top: 1px solid #8d734a;
 }
 

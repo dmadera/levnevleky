@@ -1,36 +1,41 @@
 .navbar {
-  color: #fff;
-  padding-right: 40px;
-
   .logo {
     display: block;
     margin: 0;
     padding: 0;
+
+    h1 {
+      margin:0 ;
+    }
+
+    img {
+      width: 19vw;
+      min-width: 140px;
+      max-width: 170px;
+    }
   }
 
-  .logo > img {
-    min-width: 150px;
-    width: 9vw;
-    max-width: 160px;
+  .navbar-nav {
+    font-size: 1.2em;
   }
 }
 
-.navbar ul.navbar-nav {
-  font-size: 1.2em;
-}
-
-.navbar.top {
-  @media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
+  .navbar.top {
     background: none !important;
 
-    .logo img {
-      margin: 10px 10px;
-      width: 300px;
-      max-width: 300px;
+    .logo {
+      margin: 5px 15px;
+
+      img {
+        max-width: 330px;
+      }
     }
 
     ul.navbar-nav {
-      margin-top: -30px;
+      position: absolute;
+      top: 20px;
+      right: 30px;
       text-transform: uppercase;
       font-weight: bold;
     }
