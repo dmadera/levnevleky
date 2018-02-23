@@ -1,0 +1,12 @@
+.skimap {
+  height: 700px;
+  width: 100%;
+  background: url('../img/about/skimap.png') no-repeat center center;
+  background-size: cover;
+
+  @media screen and (max-width: 572px) {
+    background-size: cover;
+    height: 500px;
+  }
+
+}

@@ -41,20 +41,21 @@ class Component  extends React.Component {
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">O areálu</a>
+              <a class="nav-link" href="#skimap">Skimapa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Ceník</a>
+              <a class="nav-link" href="#price-list">Ceník</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Škola</a>
+              <a class="nav-link" href="#ski-school">Škola</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Půjčovna</a>
+              <a class="nav-link" href="#ski-rental">Půjčovna</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontakt</a>
+              <a class="nav-link" href="#map">Kde nás najdete</a>
             </li>
+
           </ul>
         </div>
       </nav>

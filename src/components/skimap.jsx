@@ -1,15 +1,14 @@
 import React from 'react';
-import 'assets/scss/child-on-bob.scss';
-import childOnBob from  'assets/img/child-on-bob.png';
+import 'assets/scss/skimap.scss';
 
 class Component extends React.PureComponent {
 
   render() {
     return (
-      <section className="page child-on-bob">
+      <section  id="skimap" className="page skimap">
       </section>
     );
-  }
+    }
 }
 
 export default Component;

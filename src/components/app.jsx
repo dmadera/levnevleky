@@ -3,9 +3,11 @@ import 'assets/scss/app.scss';
 
 import Navbar from 'components/navbar';
 import Welcome from 'components/welcome';
-import About from 'components/about';
+import Skimap from 'components/skimap';
 import ChildOnBob from 'components/child-on-bob';
 import PriceList from 'components/price-list';
+import Map from 'components/map';
+import ContactUs from 'components/contactus';
 
 import Footer from 'components/footer';
 
@@ -18,9 +20,11 @@ class App extends React.PureComponent {
         </header>
         <main role="main">
           <Welcome />
-          <About />
+          <Skimap />
           <PriceList />
           <ChildOnBob />
+          <Map />
+          <ContactUs/>
         </main>
         <footer>
           <Footer />
