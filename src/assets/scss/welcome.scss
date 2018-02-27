@@ -22,43 +22,6 @@
     padding: 2rem;
   }
 
-  .heading {
-    display: none;
-    position: relative;
-    margin: 0 auto;
-    margin-bottom: 100px;
-    margin-top: 120px;
-
-    @media screen and (max-width: 991px) {
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-  }
-
-  .heading > h1 {
-    font-size: 5em;
-    font-family: Oswald, sans-serif;
-    font-weight: bold;
-    color: #1a1a1a;
-    text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
-
-    @media screen and (max-width: 991px) {
-      font-size: 2.5em;
-    }
-  }
-
-  .heading > h2 {
-    font-size: 2.5em;
-    //font-style: italic;
-    font-family: 'Pacifico', cursive;
-    color: #1a1a1a;
-    text-shadow: 2px 2px rgba(255, 255, 255, 0.2);
-
-    @media screen and (max-width: 991px) {
-      font-size: 1.5em;
-    }
-  }
-
   .card {
     @media screen and (max-width: 991px) {
       margin-top: 10px;
@@ -106,10 +69,6 @@
     padding: 10px 0 7px 0;
   }
 
-  .kamery img {
-    width: 100%;
-  }
-
   .areal .lifts {
     margin: 7px 0 10px 0;
   }
@@ -132,21 +91,6 @@
     height: 100%;
     background: #a0a0a0;
     border: 1px solid rgba(0, 0, 0, 0.25);
-  }
-
-  .info i {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .info .row {
-    margin: 18px 0 15px 0;
-  }
-
-  .kamery .row {
-    margin: 0;
-    vertical-align: middle;
   }
 
   .areal .curweather .row {
@@ -182,31 +126,33 @@
     vertical-align: middle;
   }
 
-  .kamery .row > div {
-    padding: 0;
-  }
+  .quick-icons {
+    position: relative;
+    height: 400px;
 
-  .kamery .row > div > div {
-    margin-top: 6px;
-  }
+    ul {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding-left: 0;
+      background: rgba(255, 255, 255, .75);
+      background-clip: border-box;
+      border: 1px solid rgba(0, 0, 0, .125);
+      border-radius: .25rem;
 
-  @media screen and (min-width: 576px) {
-    .kamery .row > div:first-child > div {
-      padding-left: 6px;
-      padding-right: 3px;
+      li a {
+        display: block;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, .75);
+
+        img {
+          width: 35px;
+        }
+      }
+
+      li:last-child a {
+        border-bottom: 0;
+      }
     }
-
-    .kamery .row > div:last-child > div {
-      padding-left: 3px;
-      padding-right: 6px;
-    }
-  }
-
-  .info .col-6 {
-    padding: 0;
-  }
-
-  .info > div .col-6 > div {
-    text-align: center;
   }
 }

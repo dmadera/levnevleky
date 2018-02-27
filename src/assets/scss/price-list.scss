@@ -1,12 +1,7 @@
 .price-list {
-  * {
-    letter-spacing: 1px;
-    color: black;
-  }
-
   table {
     td, th {
-
+      letter-spacing: 1px;
       border: 1px solid #8d734a;
 
       @media screen and (max-width: 576px) {

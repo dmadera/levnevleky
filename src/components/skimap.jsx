@@ -5,10 +5,10 @@ class Component extends React.PureComponent {
 
   render() {
     return (
-      <section  id="skimap" className="page skimap">
+      <section className="page skimap">
       </section>
     );
-    }
+  }
 }
 
 export default Component;

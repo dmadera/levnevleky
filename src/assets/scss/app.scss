@@ -23,10 +23,13 @@ body {
 }
 
 .page {
-  //background: linear-gradient(#808080, #a0a0a0);
-  //background: url('../img/bg-snow-trees.jpg') no-repeat center center;
-  //background-size: cover;
   margin: 20px 0;
+
+}
+
+.page-anchor {
+  position: relative;
+  top: -35px;
 }
 
 img {
@@ -46,7 +49,7 @@ ul {
   text-transform: uppercase;
   font-size: 2em;
   font-family: 'Oswald', sans-serif;
-  color: #8d734a;
+  color: #000;
   border-top: 1px solid #8d734a;
 }
 

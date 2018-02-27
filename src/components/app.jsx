@@ -4,7 +4,6 @@ import 'assets/scss/app.scss';
 import Navbar from 'components/navbar';
 import Welcome from 'components/welcome';
 import Skimap from 'components/skimap';
-import ChildOnBob from 'components/child-on-bob';
 import PriceList from 'components/price-list';
 import Map from 'components/map';
 import ContactUs from 'components/contactus';
@@ -20,9 +19,11 @@ class App extends React.PureComponent {
         </header>
         <main role="main">
           <Welcome />
-          <Skimap />
+          <a className="page-anchor" id="price-list">&nbsp;</a>
           <PriceList />
-          <ChildOnBob />
+          <a className="page-anchor" id="skimap">&nbsp;</a>
+          <Skimap />
+          <a className="page-anchor" id="map">&nbsp;</a>
           <Map />
           <ContactUs/>
         </main>

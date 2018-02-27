@@ -17,7 +17,7 @@ class Component extends React.PureComponent {
 
   render() {
     return (
-      <div class="card">
+      <div class="card weather">
         <a class="weatherwidget-io"
             href="https://forecast7.com/cs/50d6515d66/dolni-dvur/"
             data-label_1="DOLNÍ DVŮR"

@@ -3,7 +3,6 @@ import kotva from 'assets/img/icon-kotva.svg';
 import poma from 'assets/img/icon-poma.svg';
 import close from 'assets/img/closed-blur.svg';
 import open from 'assets/img/open-blur.svg';
-import snow from 'assets/img/icon-snow.svg';
 
 class Component extends React.PureComponent {
 
