@@ -20,6 +20,10 @@
 
   .inner {
     padding: 2rem;
+
+    @media screen and (max-width: 991px) {
+      padding-top: 100px;
+    }
   }
 
   .card {
@@ -127,31 +131,64 @@
   }
 
   .quick-icons {
-    position: relative;
-    height: 400px;
+    @media screen and (max-width: 991px) {
+      margin-top: 10px;
+    }
+
+    .contain {
+
+      display: table;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .contain > div {
+      display: table-cell;
+      vertical-align: bottom;
+      height: 100%;
+    }
 
     ul {
-      position: absolute;
-      right: 0;
-      top: 0;
-      padding-left: 0;
+      margin-bottom: 0;
       background: rgba(255, 255, 255, .75);
+      border-top: 1px solid rgba(0, 0, 0, .125);
+      padding: 0;
       background-clip: border-box;
-      border: 1px solid rgba(0, 0, 0, .125);
       border-radius: .25rem;
+      display: inline-block;
+
+      @media screen and (max-width: 991px) {
+        display: block;
+      }
+
+      li {
+        display: inline-block;
+        text-align: center;
+      }
 
       li a {
         display: block;
-        padding: 20px;
-        border-bottom: 1px solid rgba(255, 255, 255, .75);
+        padding: 19px;
+        border-right: 1px solid rgba(255, 255, 255, .75);
+        width: 70px;
+        height: 70px;
 
         img {
-          width: 35px;
+          width: 32px;
+        }
+      }
+
+      li a:hover {
+        padding: 15px;
+
+        img {
+          width: 40px;
         }
       }
 
       li:last-child a {
-        border-bottom: 0;
+        border-right: 0;
       }
     }
   }

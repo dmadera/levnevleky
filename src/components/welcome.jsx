@@ -17,22 +17,24 @@ class Component extends React.PureComponent {
         <div className="site-wrapper">
           <div className="site-wrapper-inner">
             <div className="inner">
-              <div className="row quick-icons">
-                <ul>
-                  <li><a href="#"><img src={facebook} /></a></li>
-                  <li><a href="#"><img src={instagram} /></a></li>
-                  <li><a href="#"><img src={youtube} /></a></li>
-                  <li><a href="#"><img src={email} /></a></li>
-                  <li><a href="#"><img src={webcam} /></a></li>
-                </ul>
+              <div className="row">
               </div>
               <div className="row">
                 <div className="col-lg-3">
                   <CardAreal />
                 </div>
-                <div className="col-lg-3">
-                </div>
-                <div className="col-lg-3">
+                <div className="col-lg-6 quick-icons">
+                  <div className="contain">
+                    <div>
+                      <ul>
+                        <li><a href="#"><img src={facebook} /></a></li>
+                        <li><a href="#"><img src={instagram} /></a></li>
+                        <li><a href="#"><img src={youtube} /></a></li>
+                        <li><a href="#"><img src={email} /></a></li>
+                        <li><a href="#"><img src={webcam} /></a></li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 <div className="col-lg-3">
                   <CardWeather />
