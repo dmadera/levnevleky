@@ -5,6 +5,7 @@ import Navbar from 'components/navbar';
 import Welcome from 'components/welcome';
 import Skimap from 'components/skimap';
 import PriceList from 'components/price-list';
+import Rent from 'components/rent';
 import Map from 'components/map';
 import ContactUs from 'components/contactus';
 
@@ -23,8 +24,11 @@ class App extends React.PureComponent {
           <PriceList />
           <a className="page-anchor" id="skimap">&nbsp;</a>
           <Skimap />
+          <a className="page-anchor" id="ski-rental">&nbsp;</a>
+          <Rent />
           <a className="page-anchor" id="map">&nbsp;</a>
           <Map />
+          <a className="page-anchor" id="contact-us">&nbsp;</a>
           <ContactUs/>
         </main>
         <footer>

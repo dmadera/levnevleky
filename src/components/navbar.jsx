@@ -32,9 +32,9 @@ class Component  extends React.Component {
           <img src={logo} alt="SKI AREÁL Luisino údolí" />
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button"
-            data-toggle="collapse" data-target="#navbar"
-            aria-controls="navbar" aria-expanded="false"
-            aria-label="Toggle navigation">
+          data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbar" aria-expanded="false"
+          aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -47,7 +47,7 @@ class Component  extends React.Component {
               <a class="nav-link" href="#price-list">Ceník</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#ski-school">Škola</a>
+              <a class="nav-link" href="#ski-rental">Škola</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#ski-rental">Půjčovna</a>

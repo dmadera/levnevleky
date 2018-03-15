@@ -41,6 +41,9 @@ class Component extends React.PureComponent {
                   <tr><th>Bodové jízdné</th><th>Dospělí</th><th>Děti</th></tr>
                   <tr><td>10 bodu</td><td>10</td><td>10</td></tr>
                   <tr><td>100 bodu</td><td>100</td><td>100</td></tr>
+                  <tr><th colspan="3">Odečet bodů</th></tr>
+                  <tr><td>POMA</td><td className="no-unit" colspan="2">30 bodu</td></tr>
+                  <tr><td>KOTVA</td><td className="no-unit" colspan="2">40 bodu</td></tr>
                 </tbody>
               </table>
             </div>
@@ -53,9 +56,6 @@ class Component extends React.PureComponent {
                   <tr><td colspan="2">Děti se počítají do výšky 130cm nebo do 12-ti let.</td></tr>
                   <tr><td colspan="2">Čipová karta lze kdykoli dobíjet novými body - minimální dobití je 10 bodů.</td></tr>
                   <tr><td colspan="2">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td></tr>
-                  <tr><th colspan="2">Odečet bodů</th></tr>
-                  <tr><td>POMA</td><td className="no-unit">30 bodu</td></tr>
-                  <tr><td>KOTVA</td><td className="no-unit">40 bodu</td></tr>
                 </tbody>
               </table>
             </div>

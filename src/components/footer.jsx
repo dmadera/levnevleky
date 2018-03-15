@@ -24,7 +24,7 @@ class Component extends React.PureComponent {
           </div>
 
           <div className="col-md-4 fcontainer">
-            <h5>Kontakt</h5>
+            <h5>Kontakt skiareál</h5>
             <ul>
               <li>
                 <a href="mailto:info@levnevleky.cz?subject=Dotaz">info@levnevleky.cz</a>
@@ -32,8 +32,16 @@ class Component extends React.PureComponent {
               <li>
                 <a href="http://www.levnevleky.cz">www.levnevleky.cz</a>
               </li>
-              <li>(+420) 602 22 44 43</li>
+              <li>(+420) 722 901 501</li>
             </ul>
+            <h5>Kontakt lyžařská škola</h5>
+            <ul>
+              <li>
+                <a href="mailto:skola@levnevleky.cz?subject=Dotaz">skola@levnevleky.cz</a>
+              </li>
+              <li>(+420) 722 901 501</li>
+            </ul>
+
           </div>
 
           <div className="col-md-4 fcontainer">

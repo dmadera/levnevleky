@@ -27,10 +27,10 @@ class Component extends React.PureComponent {
                   <div className="contain">
                     <div>
                       <ul>
-                        <li><a href="#"><img src={facebook} /></a></li>
+                        <li><a href="https://www.facebook.com/hotel.krkonose.liberecka.bouda/"><img src={facebook} /></a></li>
                         <li><a href="#"><img src={instagram} /></a></li>
-                        <li><a href="#"><img src={youtube} /></a></li>
-                        <li><a href="#"><img src={email} /></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCwzlYLxTBi_-aDx9sfrNbfg"><img src={youtube} /></a></li>
+                        <li><a href="#contact-us"><img src={email} /></a></li>
                         <li><a href="#"><img src={webcam} /></a></li>
                       </ul>
                     </div>
