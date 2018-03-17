@@ -1,0 +1,26 @@
+.price-list {
+  table {
+    td, th {
+      letter-spacing: 1px;
+      border: 1px solid #8d734a;
+      padding: 9px;
+
+      @media screen and (max-width: 576px) {
+        padding: 6px;
+      }
+    }
+
+    th {
+      text-align: center;
+    }
+
+    td:nth-child(n+2) {
+      text-align: right;
+      width: 20%;
+    }
+
+    td:not(.no-unit):nth-child(n+2):after {
+      content: " Kč";
+    }
+  }
+}

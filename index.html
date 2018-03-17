@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SKI AREÁL Luision údolí</title>
+    <meta name="description" content="SKI AREÁL Luisino údolí">
+    <meta name="author" content="Daniel Maděra">
+    <link rel="stylesheet" href="assets/bootstrap.min.css?v=1.0">
+    <link rel="stylesheet" href="css/layout.css?v=1.0">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-brand logo">
+          <h1 class="text-hide">SKI AREÁL Luisino údolí</h1>
+          <img src="img/logo.svg" alt="SKI AREÁL Luisino údolí" />
+        </a>
+        <button class="navbar-toggler navbar-toggler-right"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbar"
+                aria-controls="navbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#areal">Areál</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#prices">Ceník</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#school">Škola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rental">Půjčovna</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#accomodation">Ubytování</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main role="main">
+    <section class="welcome">
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="inner">
+            <div class="row">
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card areal">
+                  <div class="card-header">Vleky</div>
+                  <table class="table lifts">
+                    <tr>
+                      <td class="icon"><img src={kotva} /></td>
+                      <td>KOTVA</td>
+                      <td>500m</td>
+                      <td class="text-right"><img src={open} /></td>
+                    </tr>
+                    <tr>
+                      <td class="icon"><img src={poma} /></td>
+                      <td>POMA</td>
+                      <td>300m</td>
+                      <td class="text-right"><img src={close} /></td>
+                    </tr>
+                  </table>
+                  <div class="card-header">Aktuální stav</div>
+                  <div class="curweather">
+                    <div class="row">
+                      <div class="col-4">
+                        <span class="icon"><i class="fa fa-thermometer-half fa-2x" /></span>
+                        <span class="icon-text"><span>3°C</span></span>
+                      </div>
+                      <div class="col-8">
+                        <span class="icon"><i class="fa fa-snowflake-o fa-2x" /></span>
+                        <span class="icon-text">
+                          <span>40-50cm<br/>technicky<br/>zasněžujeme</span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 quick-icons">
+                <div class="contain">
+                  <div>
+                    <ul>
+                      <li><a href="https://www.facebook.com/hotel.krkonose.liberecka.bouda/"><img src={facebook} /></a></li>
+                      <li><a href="#"><img src={instagram} /></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCwzlYLxTBi_-aDx9sfrNbfg"><img src={youtube} /></a></li>
+                      <li><a href="#contact-us"><img src={email} /></a></li>
+                      <li><a href="#"><img src={webcam} /></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card weather">
+                  <a class="weatherwidget-io"
+                     href="https://forecast7.com/cs/50d6615d62/strazne/"
+                     data-label_1="DOLNÍ DVŮR"
+                     data-label_2="Počasí"
+                     data-font="Helvetica"
+                     data-days="5"
+                     data-theme="pure">
+                    DOLNÍ DVŮR Počasí
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="page-anchor" id="areal">&nbsp;</a>
+    <a class="page-anchor" id="prices">&nbsp;</a>
+    <section class="page price-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <table class="table table-bordered table-hover">
+              <tbody>
+                <tr><th>Jízdné skipas</th><th>Dospělí</th><th>Děti do 12 let</th></tr>
+                <tr><td>Čipová karta - vratná záloha</td><td>50</td><td>50</td></tr>
+                <tr><td colspan="3">Čipová karta se může dobíjet po celou sezónu.</td></tr>
+                <tr><td>Celodenní 9:00 - 16:00 (únor 16:30)</td><td>390</td><td>290</td></tr>
+                <tr><td>Rodinná 2 dospělí + 1 dítě</td><td>940</td><td class="no-unit">v ceně</td></tr>
+                <tr><td>Rodinná 2 dospělí + 2 děti</td><td>1040</td><td class="no-unit">v ceně</td></tr>
+                <tr><td>Dopolední 9:00 do 13:00</td><td>300</td><td>220</td></tr>
+                <tr><td>Odpolední od 12:00 (únor 16:30)</td><td>300</td><td>220</td></tr>
+                <tr><td>Odpolední od 13:00 (únor 16:30)</td><td>280</td><td>210</td></tr>
+                <tr><td>Odpolední od 14:00 (únor 16:30)</td><td>260</td><td>200</td></tr>
+                <tr><td>1 hodina</td><td>220</td><td>180</td></tr>
+                <tr><td>2 hodiny</td><td>260</td><td>200</td></tr>
+                <tr><td>3 hodiny</td><td>300</td><td>220</td></tr>
+                <tr><td>2 denní - 2*330 úspora 80</td><td>720</td><td>540</td></tr>
+                <tr><td>3 denní - 3*320 úspora 150</td><td>1050</td><td>780</td></tr>
+                <tr><td>4 denní - 4*310 úspora 240</td><td>1360</td><td>1000</td></tr>
+                <tr><td>5 denní - 5*300 úspora 350</td><td>1650</td><td>1200</td></tr>
+                <tr><td>6 denní - 6*290 úspora 480</td><td>1920</td><td>1380</td></tr>
+                <tr><td>7 denní - 7*280 úspora 630</td><td>2170</td><td>1540</td></tr>
+                <tr><td colspan="3">Nákup vícedenního skipasu = roller zdarma</td></tr>
+                <tr><td>10 bodů</td><td>10</td><td>10</td></tr>
+                <tr><td>100 bodů</td><td>100</td><td>100</td></tr>
+                <tr><td>Školy a skupiny 10 a více žáků</td><td>260</td><td>doprovod 0</td></tr>
+                <tr><th colspan="3">Odečet bodů při bodovém jízdném:</th></tr>
+                <tr><td>Poma 300m</td><td class="no-unit" colspan="2">30 bodů</td></tr>
+                <tr><td>Kotva 500m</td><td class="no-unit" colspan="2">40 bodů</td></tr>
+                <tr><td colspan="3">Děti se počítají do výšky 130cm nebo do 12-ti let.</td></tr>
+                <tr><td colspan="3">Čipová karta lze kdykoli dobíjet novými body - minimální dobití je 10 bodů.</td></tr>
+                <tr><td colspan="3">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="page-anchor" id="skimap">&nbsp;</a>
+    <a class="page-anchor" id="rental">&nbsp;</a>
+    <section class="page price-list">
+      <PageTitle title="Půjčovna a lyžařská škola" />
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6">
+            <table class="table table-bordered table-hover">
+              <tbody>
+                <tr><th>Doba půjčení</th><th>Cena za komplet</th></tr>
+                <tr><td>Dopoledne od 09:00 do 12:30</td><td>250</td></tr>
+                <tr><td>Odpoledne od 12:30 do 16:00</td><td>250</td></tr>
+                <tr><td>Celodenní</td><td>300</td></tr>
+                <tr><td>Vícedenní (cena za 1 den)</td><td>250</td></tr>
+                <tr><th colspan="2">Doplňující informace</th></tr>
+                <tr><td colspan="2">K dispozici je kompletní vybavení na SNOWBOARD či LYŽE.</td></tr>
+                <tr><td colspan="2">Nutny alespoň jeden doklad totožnosti.</td></tr>
+                <tr><td colspan="2">Odpovědnost za nadměrné opotřebení, poškození či zrátu nese nájemce.</td></tr>
+                <tr><td colspan="2">Helma k půjčenému setu je zdarma.</td></tr>
+                <tr><th colspan="2">Kontakt</th></tr>
+                <tr><td colspan="2"><a href="mailto:pujcovna@levnevleky.cz?subject=Dotaz">pujcovna@levnevleky.cz</a></td></tr>
+                <tr><td colspan="2">(+420) 722 901 501</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-6">
+            <table class="table table-bordered table-hover">
+              <tbody>
+                <tr><th>Doba vyuky</th><th>Doba vyuky</th><th>Cena</th></tr>
+                <tr><td>1 osoba</td><td class="no-unit">1 hodina</td><td>490</td></tr>
+                <tr><td>1 osoba</td><td class="no-unit">2 hodina</td><td>980</td></tr>
+                <tr><td>1 osoba</td><td class="no-unit">3 hodina</td><td>1470</td></tr>
+                <tr><td>každá další osoba</td><td class="no-unit">1 hodina</td><td>+250</td></tr>
+                <tr><th colspan="3">Doplňující informace</th></tr>
+                <tr><td colspan="3">Při zakoupení lyžařské školy - skipass ZDARMA.</td></tr>
+                <tr><td colspan="3">Vyuka skupiny maximálně 6 osob.</td></tr>
+                <tr><td colspan="3">Pro školní a zájmové skupiny vyhotovíme speciální nabídku.</td></tr>
+                <tr><td colspan="3">Instruktor je trvale přítomen v areálu k dispozici na pokladně vleku.</td></tr>
+                <tr><th colspan="3">Kontakt</th></tr>
+                <tr><td colspan="3"><a href="mailto:skola@levnevleky.cz?subject=Dotaz">skola@levnevleky.cz</a></td></tr>
+                <tr><td colspan="3">(+420) 722 901 501</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a class="page-anchor" id="map">&nbsp;</a>
+    </main>
+    <footer>
+    </footer>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
