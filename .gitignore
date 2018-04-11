@@ -3,6 +3,8 @@ dist/
 node_modules/
 tests/__coverage__/
 package-lock.json
+.sass-cache/
+
 
 # Swap
 [._]*.s[a-v][a-z]
