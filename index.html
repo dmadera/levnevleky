@@ -5,7 +5,10 @@
     <title>SKI AREÁL Luision údolí</title>
     <meta name="description" content="SKI AREÁL Luisino údolí">
     <meta name="author" content="Daniel Maděra">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="css/app.css?v=1.0">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
   </head>
   <body>
     <header>
@@ -41,9 +44,6 @@
               <a class="nav-link" href="#rental">Půjčovna</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#accomodation">Ubytování</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="#contact">Kontakt</a>
             </li>
           </ul>
@@ -63,13 +63,13 @@
                   <div class="card-header">Vleky</div>
                   <table class="table lifts">
                     <tr>
-                      <td class="icon"><img src="img/layout/kotva.svg" /></td>
+                      <td class="icon grey-bg"><img src="img/layout/kotva.svg" /></td>
                       <td>KOTVA</td>
                       <td>500m</td>
                       <td class="text-right"><img src="img/layout/open.svg" /></td>
                     </tr>
                     <tr>
-                      <td class="icon"><img src="img/layout/poma.svg" /></td>
+                      <td class="icon grey-bg"><img src="img/layout/poma.svg" /></td>
                       <td>POMA</td>
                       <td>300m</td>
                       <td class="text-right"><img src="img/layout/closed.svg" /></td>
@@ -79,11 +79,11 @@
                   <div class="curweather">
                     <div class="row">
                       <div class="col-4">
-                        <span class="icon"></span>
+                        <span class="icon thermometer"><img src="img/layout/thermometer.svg" /></span>
                         <span class="icon-text"><span>3°C</span></span>
                       </div>
                       <div class="col-8">
-                        <span class="icon"></span>
+                        <span class="icon snowflake"><img src="img/layout/snowflake.svg" /></span>
                         <span class="icon-text">
                           <span>40-50cm<br/>technicky<br/>zasněžujeme</span>
                         </span>
@@ -145,55 +145,196 @@
       </div>
     </section>
     <a class="page-anchor" id="areal">&nbsp;</a>
-    <a class="page-anchor" id="prices">&nbsp;</a>
-    <section class="page price-list">
+    <section class="page areal">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <table class="table table-bordered table-hover">
-              <tbody>
-                <tr><th>Jízdné skipas</th><th>Dospělí</th><th>Děti do 12 let</th></tr>
-                <tr><td>Čipová karta - vratná záloha</td><td>50</td><td>50</td></tr>
-                <tr><td colspan="3">Čipová karta se může dobíjet po celou sezónu.</td></tr>
-                <tr><td>Celodenní 9:00 - 16:00 (únor 16:30)</td><td>390</td><td>290</td></tr>
-                <tr><td>Rodinná 2 dospělí + 1 dítě</td><td>940</td><td class="no-unit">v ceně</td></tr>
-                <tr><td>Rodinná 2 dospělí + 2 děti</td><td>1040</td><td class="no-unit">v ceně</td></tr>
-                <tr><td>Dopolední 9:00 do 13:00</td><td>300</td><td>220</td></tr>
-                <tr><td>Odpolední od 12:00 (únor 16:30)</td><td>300</td><td>220</td></tr>
-                <tr><td>Odpolední od 13:00 (únor 16:30)</td><td>280</td><td>210</td></tr>
-                <tr><td>Odpolední od 14:00 (únor 16:30)</td><td>260</td><td>200</td></tr>
-                <tr><td>1 hodina</td><td>220</td><td>180</td></tr>
-                <tr><td>2 hodiny</td><td>260</td><td>200</td></tr>
-                <tr><td>3 hodiny</td><td>300</td><td>220</td></tr>
-                <tr><td>2 denní - 2*330 úspora 80</td><td>720</td><td>540</td></tr>
-                <tr><td>3 denní - 3*320 úspora 150</td><td>1050</td><td>780</td></tr>
-                <tr><td>4 denní - 4*310 úspora 240</td><td>1360</td><td>1000</td></tr>
-                <tr><td>5 denní - 5*300 úspora 350</td><td>1650</td><td>1200</td></tr>
-                <tr><td>6 denní - 6*290 úspora 480</td><td>1920</td><td>1380</td></tr>
-                <tr><td>7 denní - 7*280 úspora 630</td><td>2170</td><td>1540</td></tr>
-                <tr><td colspan="3">Nákup vícedenního skipasu = roller zdarma</td></tr>
-                <tr><td>10 bodů</td><td>10</td><td>10</td></tr>
-                <tr><td>100 bodů</td><td>100</td><td>100</td></tr>
-                <tr><td>Školy a skupiny 10 a více žáků</td><td>260</td><td>doprovod 0</td></tr>
-                <tr><th colspan="3">Odečet bodů při bodovém jízdném:</th></tr>
-                <tr><td>Poma 300m</td><td class="no-unit" colspan="2">30 bodů</td></tr>
-                <tr><td>Kotva 500m</td><td class="no-unit" colspan="2">40 bodů</td></tr>
-                <tr><td colspan="3">Děti se počítají do výšky 130cm nebo do 12-ti let.</td></tr>
-                <tr><td colspan="3">Čipová karta lze kdykoli dobíjet novými body - minimální dobití je 10 bodů.</td></tr>
-                <tr><td colspan="3">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td></tr>
-              </tbody>
-            </table>
+          <h2>Areál</h2>
+          <div class="col-6">
+            <p>
+            V areálu jsou k dispozici 2 vleky o délkách 500 m a 300 m s obtížností sjezdovek střední a lehká. Tým areálu za pomoci profesionální techniky a umělého zasněžování se postará o ideální podmínky pro lyžování v průběhu celé lyžařské sezóny. Penzion Liberecká Bouda u horní stanice vleku poskytuje ubytovací a restaurační služby včetně venkovního lyžařského bufetu. Parkoviště je u nás zcela zdarma pouhých pár desítek metrů od spodní stanice lyžařského vleku. Od sezóny 2018/19 má výuku lyžování a snowboardingu pod palcem lyžařská škola Mountain Rangers, která se kvalifikovaně postará o začínající i zkušenější lyžaře včetně Vašich ratolestí s celodenním doprovodným programem. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h2>Skimapa</h2>
+            <div class="skimap">
+                <div class="map"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <a class="page-anchor" id="skimap">&nbsp;</a>
-    <a class="page-anchor" id="rental">&nbsp;</a>
-    <section class="page price-list">
-      <PageTitle title="Půjčovna a lyžařská škola" />
-      <div class="container-fluid">
+    <a class="page-anchor" id="prices">&nbsp;</a>
+    <section class="page prices">
+    <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6">
+        <div class="col-12">
+        <h2>Ceník skipasů</h2>
+        </div>
+            <div class="col-lg-4">
+                <table class="table table-bordered table-hover">
+                    <tbody>
+                    <tr>
+                        <th>Denní jízdné</th>
+                        <th>Dospělí</th>
+                        <th>Děti</th>
+                    </tr>
+                    <tr>
+                        <td>Celodenní</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>Od 12:00</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>Od 13:00</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>Od 14:00</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>1 hodina</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>2 hodina</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>3 hodina</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>Školní skupiny (10 a více žáků)</td>
+                        <td>290/os</td>
+                        <td class="no-unit">doprovod zdarma</td>
+                    </tr>
+                    <tr>
+                        <th>Rodinná nabídka</th>
+                        <th colspan="2"></th>
+                    </tr>
+                    <tr>
+                        <td>Rodinná 2 dospělí + 1 dítě</td>
+                        <td colspan="2">940</td>
+                    </tr>
+                    <tr>
+                        <td>Rodinná 2 dospělí + 2 děti</td>
+                        <td colspan="2">1040</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <table class="table table-bordered table-hover">
+                    <tbody>
+                    <tr>
+                        <th>Vícedenní jízdné</th>
+                        <th>Dospělí</th>
+                        <th>Děti</th>
+                    </tr>
+                    <tr>
+                        <td>2 denní</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>3 denní</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>4 denní</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>5 denní</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>6 denní</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <td>7 denní</td>
+                        <td>390</td>
+                        <td>290</td>
+                    </tr>
+                    <tr>
+                        <th>Bodové jízdné</th>
+                        <th>Dospělí</th>
+                        <th>Děti</th>
+                    </tr>
+                    <tr>
+                        <td>10 bodu</td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>100 bodu</td>
+                        <td>100</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th colspan="3">Odečet bodů</th>
+                    </tr>
+                    <tr>
+                        <td>POMA</td>
+                        <td class="no-unit" colspan="2">30 bodu</td>
+                    </tr>
+                    <tr>
+                        <td>KOTVA</td>
+                        <td class="no-unit" colspan="2">40 bodu</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-4">
+                <table class="table table-bordered table-hover">
+                    <tbody>
+                    <tr>
+                        <th colspan="2">Doplňující informace</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Provozní doba je od 9:00 - 16:00, v únoru do 16:30</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Vratná záloha na čipovou kartu je 50,- Kč.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Děti se počítají do výšky 130cm nebo do 12-ti let.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Čipová karta lze kdykoli dobíjet novými body - minimální dobití je 10 bodů.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+    <a class="page-anchor" id="rental">&nbsp;</a>
+    <section class="page rental prices">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Půjčovna</h2>
             <table class="table table-bordered table-hover">
               <tbody>
                 <tr><th>Doba půjčení</th><th>Cena za komplet</th></tr>
@@ -214,7 +355,15 @@
               </tbody>
             </table>
           </div>
-          <div class="col-lg-6">
+          </div>
+          </div>
+          </section>
+          <a class="page-anchor" id="school">&nbsp;</a>
+        <section class="page school prices">
+        <div class="container">
+          <div class="row">
+          <div class="col-12">
+          <h2>Lyžařská škola</h2>
             <table class="table table-bordered table-hover">
               <tbody>
                 <tr><th>Doba vyuky</th><th>Doba vyuky</th><th>Cena</th></tr>
