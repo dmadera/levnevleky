@@ -350,6 +350,15 @@ h2 {
   }
 }
 
+.map {
+    #map_container {
+        height: 500px;
+            @include media-breakpoint-down(md) {
+                height: 350px;
+            }
+      }
+}
+
 footer {
   background: #f4f7f6;
 
@@ -378,16 +387,30 @@ footer {
     img {
       width: 130px;
       margin: 10px 35px 10px 0;
+      
+      @include media-breakpoint-down(md) {
+            width: 80px;
+      }
+      
     }
 
     .lb img {
       width: 280px;
+      
+      @include media-breakpoint-down(md) {
+            width: 200px;
+      }
     }
   }
+  
   .cards {
     img {
       width: 70px;
       margin: 10px 35px 10px 0;
+      
+      @include media-breakpoint-down(md) {
+            width: 50px;
+      }
     }
 
     img:last-child {
