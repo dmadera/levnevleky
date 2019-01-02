@@ -8769,6 +8769,13 @@ h2 {
   border-right: 0;
 }
 
+.webcams .webcam, .webcams .webcam-main {
+  display: block;
+}
+.webcams .thumbnails .webcam {
+  margin-bottom: 10px;
+}
+
 .skimap .map {
   height: 850px;
   width: 1100px;
@@ -8853,6 +8860,15 @@ h2 {
   .map #map_container {
     height: 350px;
   }
+}
+
+.school .letter {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.school .letter > div {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 footer {

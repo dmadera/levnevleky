@@ -7,6 +7,7 @@
     <meta name="author" content="Daniel Maděra">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="css/app.css?v=1.0">
+    <link rel="stylesheet" href="assets/dnk-gallery/css/jquery.donkeyGallery.packed.min.css">
     <link rel="shortcut icon" href="/favicon.png">
     <link rel="shortcut icon" href="favicon.png" type="image/png">
   </head>
@@ -32,7 +33,7 @@
               <a class="nav-link" href="#areal">Areál</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cams">Webkamery</a>
+              <a class="nav-link" href="#webcams">Webkamery</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#prices">Ceník</a>
@@ -51,397 +52,497 @@
       </nav>
     </header>
     <main role="main">
-    <section class="welcome">
-      <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-          <div class="inner">
-            <div class="row">
-            </div>
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="card areal">
-                  <div class="card-header">Vleky</div>
-                  <table class="table lifts">
-                    <tr>
-                      <td class="icon grey-bg"><img src="img/layout/kotva.svg" /></td>
-                      <td>KOTVA</td>
-                      <td>500m</td>
-                      <td class="text-right"><img src="img/layout/open.svg" /></td>
-                    </tr>
-                    <tr>
-                      <td class="icon grey-bg"><img src="img/layout/poma.svg" /></td>
-                      <td>POMA</td>
-                      <td>300m</td>
-                      <td class="text-right"><img src="img/layout/closed.svg" /></td>
-                    </tr>
-                  </table>
-                  <div class="card-header">Aktuální stav</div>
-                  <div class="curweather">
-                    <div class="row">
-                      <div class="col-4">
-                        <span class="icon thermometer"><img src="img/layout/thermometer.svg" /></span>
-                        <span class="icon-text"><span>3°C</span></span>
-                      </div>
-                      <div class="col-8">
-                        <span class="icon snowflake"><img src="img/layout/snowflake.svg" /></span>
-                        <span class="icon-text">
-                          <span>40-50cm<br/>technicky<br/>zasněžujeme</span>
-                        </span>
+      <section class="welcome">
+        <div class="site-wrapper">
+          <div class="site-wrapper-inner">
+            <div class="inner">
+              <div class="row">
+              </div>
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="card areal">
+                    <div class="card-header">Vleky</div>
+                    <table class="table lifts">
+                      <tr>
+                        <td class="icon grey-bg"><img src="img/layout/kotva.svg" /></td>
+                        <td>KOTVA</td>
+                        <td>500m</td>
+                        <td class="text-right"><img src="img/layout/open.svg" /></td>
+                      </tr>
+                      <tr>
+                        <td class="icon grey-bg"><img src="img/layout/poma.svg" /></td>
+                        <td>POMA</td>
+                        <td>300m</td>
+                        <td class="text-right"><img src="img/layout/closed.svg" /></td>
+                      </tr>
+                    </table>
+                    <div class="card-header">Aktuální stav</div>
+                    <div class="curweather">
+                      <div class="row">
+                        <div class="col-4">
+                          <span class="icon thermometer"><img src="img/layout/thermometer.svg" /></span>
+                          <span class="icon-text"><span>3°C</span></span>
+                        </div>
+                        <div class="col-8">
+                          <span class="icon snowflake"><img src="img/layout/snowflake.svg" /></span>
+                          <span class="icon-text">
+                            <span>40-50cm<br/>technicky<br/>zasněžujeme</span>
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-6 quick-icons">
-                <div class="contain">
-                  <div>
-                    <ul>
-                      <li>
-                        <a href="https://www.facebook.com/libereckaboudakrkonose/">
-                          <img src="img/layout/facebook.svg" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.youtube.com/channel/UCwzlYLxTBi_-aDx9sfrNbfg">
-                          <img src="img/layout/youtube.svg" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#contact-us">
-                          <img src="img/layout/email.svg" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <img src="img/layout/webcam.svg" />
-                        </a>
-                      </li>
-                    </ul>
+                <div class="col-lg-6 quick-icons">
+                  <div class="contain">
+                    <div>
+                      <ul>
+                        <li>
+                          <a href="https://www.facebook.com/libereckaboudakrkonose/">
+                            <img src="img/layout/facebook.svg" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.youtube.com/channel/UCwzlYLxTBi_-aDx9sfrNbfg">
+                            <img src="img/layout/youtube.svg" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#contact">
+                            <img src="img/layout/email.svg" />
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#webcams">
+                            <img src="img/layout/webcam.svg" />
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card weather">
+                    <a class="weatherwidget-io"
+                       href="https://forecast7.com/cs/50d6615d62/strazne/"
+                       data-label_1="DOLNÍ DVŮR"
+                       data-label_2="Počasí"
+                       data-font="Helvetica"
+                       data-days="5"
+                       data-theme="pure">
+                      DOLNÍ DVŮR Počasí
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
-                <div class="card weather">
-                  <a class="weatherwidget-io"
-                     href="https://forecast7.com/cs/50d6615d62/strazne/"
-                     data-label_1="DOLNÍ DVŮR"
-                     data-label_2="Počasí"
-                     data-font="Helvetica"
-                     data-days="5"
-                     data-theme="pure">
-                    DOLNÍ DVŮR Počasí
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <a class="page-anchor" id="areal">&nbsp;</a>
-    <section class="page areal">
-      <div class="container">
-        <div class="row">
-          <h2>Areál</h2>
-          <div class="col-12 col-6-md">
-            <p>
-            V areálu jsou k dispozici 2 vleky o délkách 500 m a 300 m s obtížností sjezdovek střední a lehká. Tým areálu za pomoci profesionální techniky a umělého zasněžování se postará o ideální podmínky pro lyžování v průběhu celé lyžařské sezóny. Penzion Liberecká Bouda u horní stanice vleku poskytuje ubytovací a restaurační služby včetně venkovního lyžařského bufetu. Parkoviště je u nás zcela zdarma pouhých pár desítek metrů od spodní stanice lyžařského vleku. Od sezóny 2018/19 má výuku lyžování a snowboardingu pod palcem lyžařská škola Mountain Rangers, která se kvalifikovaně postará o začínající i zkušenější lyžaře včetně Vašich ratolestí s celodenním doprovodným programem. 
-            </p>
-          </div>
-          <div class="col-12 col-6-md">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <h2>Skimapa</h2>
-            <div class="skimap">
-                <div class="map"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <a class="page-anchor" id="prices">&nbsp;</a>
-    <section class="page prices">
-    <div class="container">
-        <div class="row">
-        <div class="col-12">
-        <h2>Ceník skipasů</h2>
-        </div>
-            <div class="col-xl-6">
-                <table class="table table-bordered table-hover">
-                    <tbody>
-                    <tr>
-                        <th>Denní jízdné</th>
-                        <th>Dospělí</th>
-                        <th>Děti</th>
-                    </tr>
-                    <tr>
-                        <td>Celodenní</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>Od 12:00</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>Od 13:00</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>Od 14:00</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>1 hodina</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>2 hodina</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>3 hodina</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>Školní skupiny (10 a více žáků)</td>
-                        <td>290/os</td>
-                        <td class="no-unit">doprovod zdarma</td>
-                    </tr>
-                    <tr>
-                        <th>Rodinná nabídka</th>
-                        <th colspan="2"></th>
-                    </tr>
-                    <tr>
-                        <td>Rodinná 2 dospělí + 1 dítě</td>
-                        <td colspan="2">940</td>
-                    </tr>
-                    <tr>
-                        <td>Rodinná 2 dospělí + 2 děti</td>
-                        <td colspan="2">1040</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-xl-6">
-                <table class="table table-bordered table-hover">
-                    <tbody>
-                    <tr>
-                        <th>Vícedenní jízdné</th>
-                        <th>Dospělí</th>
-                        <th>Děti</th>
-                    </tr>
-                    <tr>
-                        <td>2 denní</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>3 denní</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>4 denní</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>5 denní</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>6 denní</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <td>7 denní</td>
-                        <td>390</td>
-                        <td>290</td>
-                    </tr>
-                    <tr>
-                        <th>Bodové jízdné</th>
-                        <th>Dospělí</th>
-                        <th>Děti</th>
-                    </tr>
-                    <tr>
-                        <td>10 bodu</td>
-                        <td>10</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>100 bodu</td>
-                        <td>100</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <th colspan="3">Odečet bodů</th>
-                    </tr>
-                    <tr>
-                        <td>POMA</td>
-                        <td class="no-unit" colspan="2">30 bodu</td>
-                    </tr>
-                    <tr>
-                        <td>KOTVA</td>
-                        <td class="no-unit" colspan="2">40 bodu</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-12">
-                <table class="table table-bordered table-hover">
-                    <tbody>
-                    <tr>
-                        <th colspan="2">Doplňující informace</th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Provozní doba je od 9:00 - 16:00, v únoru do 16:30</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Vratná záloha na čipovou kartu je 50,- Kč.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Děti se počítají do výšky 130cm nebo do 12-ti let.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Čipová karta lze kdykoli dobíjet novými body - minimální dobití je 10 bodů.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        </div>
-    </section>
-    <a class="page-anchor" id="rental">&nbsp;</a>
-    <section class="page rental prices">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Půjčovna</h2>
-            <table class="table table-bordered table-hover">
-              <tbody>
-                <tr><th>Doba půjčení</th><th>Cena za komplet</th></tr>
-                <tr><td>Dopoledne od 09:00 do 12:30</td><td>250</td></tr>
-                <tr><td>Odpoledne od 12:30 do 16:00</td><td>250</td></tr>
-                <tr><td>Celodenní</td><td>300</td></tr>
-                <tr><td>Vícedenní (cena za 1 den)</td><td>250</td></tr>
-                <tr><th colspan="2">Doplňující informace</th></tr>
-                <tr><td colspan="2">K dispozici je kompletní vybavení na SNOWBOARD či LYŽE.</td></tr>
-                <tr><td colspan="2">Nutny alespoň jeden doklad totožnosti.</td></tr>
-                <tr><td colspan="2">Odpovědnost za nadměrné opotřebení, poškození či zrátu nese nájemce.</td></tr>
-                <tr><td colspan="2">Helma k půjčenému setu je zdarma.</td></tr>
-                <tr><th colspan="2">Kontakt</th></tr>
-                <tr><td colspan="2">
-                    <a href="mailto:pujcovna@levnevleky.cz?subject=Dotaz">pujcovna@levnevleky.cz</a>
-                  </td></tr>
-                <tr><td colspan="2">(+420) 722 901 501</td></tr>
-              </tbody>
-            </table>
-          </div>
-          </div>
-          </div>
-          </section>
-          <a class="page-anchor" id="school">&nbsp;</a>
-        <section class="page school prices">
+      </section>
+      <a class="page-anchor" id="areal">&nbsp;</a>
+      <section class="page areal">
         <div class="container">
           <div class="row">
-          <div class="col-12">
-          <h2>Lyžařská škola</h2>
-            <table class="table table-bordered table-hover">
-              <tbody>
-                <tr><th>Doba vyuky</th><th>Doba vyuky</th><th>Cena</th></tr>
-                <tr><td>1 osoba</td><td class="no-unit">1 hodina</td><td>490</td></tr>
-                <tr><td>1 osoba</td><td class="no-unit">2 hodina</td><td>980</td></tr>
-                <tr><td>1 osoba</td><td class="no-unit">3 hodina</td><td>1470</td></tr>
-                <tr><td>každá další osoba</td><td class="no-unit">1 hodina</td><td>+250</td></tr>
-                <tr><th colspan="3">Doplňující informace</th></tr>
-                <tr><td colspan="3">Od sezóny 2018/19 nová škola <b>Mountain Rangers</b> i s doprovodným programem pro děti.</td></tr>
-                <tr><td colspan="3">Při zakoupení lyžařské školy - skipass ZDARMA.</td></tr>
-                <tr><td colspan="3">Vyuka skupiny maximálně 6 osob.</td></tr>
-                <tr><td colspan="3">Pro školní a zájmové skupiny vyhotovíme speciální nabídku.</td></tr>
-                <tr><td colspan="3">Instruktor je trvale přítomen v areálu k dispozici na pokladně vleku.</td></tr>
-                <tr><th colspan="3">Kontakt</th></tr>
-                <tr><td colspan="3"><a href="mailto:skola@levnevleky.cz?subject=Dotaz">skola@levnevleky.cz</a></td></tr>
-                <tr><td colspan="3">(+420) 722 901 501</td></tr>
-              </tbody>
-            </table>
+            <h2>Areál</h2>
+            <div class="col-12 col-lg-6">
+              <p>
+              V areálu jsou k dispozici 2 vleky o délkách 500 m a 300 m s obtížností sjezdovek střední a lehká. Tým areálu za pomoci profesionální techniky a umělého zasněžování se postará o ideální podmínky pro lyžování v průběhu celé lyžařské sezóny. Penzion Liberecká Bouda u horní stanice vleku poskytuje ubytovací a restaurační služby včetně venkovního lyžařského bufetu. Parkoviště je u nás zcela zdarma pouhých pár desítek metrů od spodní stanice lyžařského vleku. Od sezóny 2018/19 má výuku lyžování a snowboardingu pod palcem lyžařská škola Mountain Rangers, která se kvalifikovaně postará o začínající i zkušenější lyžaře včetně Vašich ratolestí s celodenním doprovodným programem.
+              </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div id="gallery"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page webcams" id="webcams">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Webkamery</h2>
+            </div>
+            <div class="col-12 col-md-9 d-none d-md-block">
+              <a class="webcam-main" data-name="udoli" data-link="https://www.libereckabouda.cz/kamera/ip-camera-lb-<cam_name>.jpg"><img src="" /></a>
+            </div>
+            <div class="col-12 col-md-3 thumbnails">
+              <a class="webcam" data-name="udoli" ><img src="" /></a>
+              <a class="webcam" data-name="skibar" ><img src="" /></a>
+              <a class="webcam" data-name="bouda" ><img src="" /></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="page skimap" id="skimap">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Skimapa</h2>
+              <div class="skimap">
+                <div class="map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a class="page-anchor" id="prices">&nbsp;</a>
+      <section class="page prices">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Ceník skipasů</h2>
+            </div>
+            <div class="col-xl-6">
+              <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr>
+                    <th>Denní jízdné</th>
+                    <th>Dospělí</th>
+                    <th>Děti</th>
+                  </tr>
+                  <tr>
+                    <td>Celodenní</td>
+                    <td>430</td>
+                    <td>330</td>
+                  </tr>
+                  <tr>
+                    <td>Od 12:00</td>
+                    <td>340</td>
+                    <td>260</td>
+                  </tr>
+                  <tr>
+                    <td>Od 13:00</td>
+                    <td>320</td>
+                    <td>260</td>
+                  </tr>
+                  <tr>
+                    <td>Od 14:00</td>
+                    <td>300</td>
+                    <td>240</td>
+                  </tr>
+                  <tr>
+                    <td>1 hodina</td>
+                    <td>260</td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>2 hodina</td>
+                    <td>300</td>
+                    <td>230</td>
+                  </tr>
+                  <tr>
+                    <td>3 hodina</td>
+                    <td>340</td>
+                    <td>260</td>
+                  </tr>
+                  <tr>
+                    <td>Školní skupiny (10 a více žáků)</td>
+                    <td>320/os</td>
+                    <td class="no-unit">doprovod zdarma</td>
+                  </tr>
+                  <tr>
+                    <th>Rodinná nabídka</th>
+                    <th colspan="2"></th>
+                  </tr>
+                  <tr>
+                    <td>Rodinná 2 dospělí + 1 dítě (1. dítě 190,-)</td>
+                    <td colspan="2">1050</td>
+                  </tr>
+                  <tr>
+                    <td>Rodinná 2 dospělí + 2 děti (2. dítě 140,-)</td>
+                    <td colspan="2">1190</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-xl-6">
+              <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr>
+                    <th>Vícedenní jízdné</th>
+                    <th>Dospělí</th>
+                    <th>Děti</th>
+                  </tr>
+                  <tr>
+                    <td>2 denní</td>
+                    <td>800</td>
+                    <td>620</td>
+                  </tr>
+                  <tr>
+                    <td>3 denní</td>
+                    <td>1170</td>
+                    <td>900</td>
+                  </tr>
+                  <tr>
+                    <td>4 denní</td>
+                    <td>1520</td>
+                    <td>1160</td>
+                  </tr>
+                  <tr>
+                    <td>5 denní</td>
+                    <td>1850</td>
+                    <td>1400</td>
+                  </tr>
+                  <tr>
+                    <td>6 denní</td>
+                    <td>2160</td>
+                    <td>1620</td>
+                  </tr>
+                  <tr>
+                    <td>7 denní</td>
+                    <td>2450</td>
+                    <td>1820</td>
+                  </tr>
+                  <tr>
+                    <th>Bodové jízdné</th>
+                    <th>Dospělí</th>
+                    <th>Děti</th>
+                  </tr>
+                  <tr>
+                    <td>10 bodů</td>
+                    <td>10</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <td>100 bodů</td>
+                    <td>100</td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <th colspan="3">Odečet bodů</th>
+                  </tr>
+                  <tr>
+                    <td>POMA 300m</td>
+                    <td class="no-unit" colspan="2">30 bodů</td>
+                  </tr>
+                  <tr>
+                    <td>KOTVA 500m</td>
+                    <td class="no-unit" colspan="2">40 bodů</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-12">
+              <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Doplňující informace</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Provozní doba je od 9:00 - 16:00, v únoru do 16:30</td>
+                  </tr>
+                  <tr>
+                    <td class="font-weight-bold" colspan="2">Vratná záloha na čipovou kartu je 50,- Kč.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Děti se počítají do výšky 130cm nebo do 12-ti let.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Čipová karta lze kdykoli dobíjet novými body - minimální dobití je 10 bodů.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a class="page-anchor" id="rental">&nbsp;</a>
+      <section class="page rental prices">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Půjčovna</h2>
+              <table class="table table-bordered table-hover">
+                <tbody>
+                  <tr><th>Doba půjčení</th><th>Cena za komplet</th></tr>
+                  <tr><td>Dopoledne od 09:00 do 12:30</td><td>280</td></tr>
+                  <tr><td>Odpoledne od 12:30 do 16:00</td><td>280</td></tr>
+                  <tr><td>Celodenní</td><td>340</td></tr>
+                  <tr><td>Vícedenní (cena za 1 den)</td><td>300</td></tr>
+                  <tr><td>Půjčovné v rámci lyžařské školy (max 2h)</td><td>200</td></tr>
+                  <tr><th colspan="2">Doplňující informace</th></tr>
+                  <tr><td colspan="2">K dispozici je kompletní vybavení na SNOWBOARD či LYŽE.</td></tr>
+                  <tr><td colspan="2">Nutný alespoň jeden doklad totožnosti.</td></tr>
+                  <tr><td colspan="2">Odpovědnost za nadměrné opotřebení, poškození či zrátu nese nájemce.</td></tr>
+                  <tr><td colspan="2">Helma k půjčenému setu je zdarma.</td></tr>
+                  <tr><th colspan="2">Kontakt</th></tr>
+                  <tr><td colspan="2">
+                      <a href="mailto:pujcovna@levnevleky.cz?subject=Dotaz">pujcovna@levnevleky.cz</a>
+                    </td></tr>
+                    <tr><td colspan="2">(+420) 722 901 501</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <a class="page-anchor" id="school">&nbsp;</a>
+      <section class="page school prices">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Lyžařská škola</h2>
+              <div class="row letter">
+                <div class="col-6 col-lg-3">
+                  <img src="img/school/page1.jpg" />
+                </div>
+                <div class="col-6 col-lg-3">
+                  <img src="img/school/page2.jpg" />
+                </div>
+                <div class="col-6 col-lg-3">
+                  <img src="img/school/page3.jpg" />
+                </div>
+                <div class="col-6 col-lg-3">
+                  <img src="img/school/page4.jpg" />
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12">
+                  <table class="table table-bordered table-hover">
+                    <tbody>
+                      <tr><th>Osoby</th><th>Doba výuky</th><th>Cena</th></tr>
+                      <tr><td>Děti (výuka + skipas)</td><td class="no-unit">1 hodina</td><td>460,-</td></tr>
+                      <tr><td>Dospělí (výuka + skipas)</td><td class="no-unit">1 hodina</td><td>560,-</td></tr>
+                      <tr><td colspan="2">Výuka 4 hodiny a více</td><td>sleva</td></tr>
+                      <tr><td colspan="2">Skupinová výuka</td><td>na dotaz</td></tr>
+                      <tr><th colspan="3">Doplňující informace</th></tr>
+                      <tr><td colspan="3">Od sezóny 2018/19 nová škola <b>Mountain Rangers</b> i s doprovodným programem pro děti.</td></tr>
+                      <tr><td colspan="3">Při zakoupení lyžařské školy - skipass ZDARMA.</td></tr>
+                      <tr><td colspan="3">Instruktor je trvale přítomen v areálu k dispozici na pokladně vleku.</td></tr>
+                      <tr><th colspan="3">Kontakt</th></tr>
+                      <tr><td colspan="3"><a href="mailto:skola@levnevleky.cz?subject=Dotaz">skola@levnevleky.cz</a></td></tr>
+                      <tr><td colspan="3">(+420) 722 901 501</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="page map" id="map">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Kde nás najdete</h2>
+              <div class="mt-2" id="map_container">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page contact" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h2>Napište nám</h2>
+              <form id="contactForm" method="post">
+                <div class="row">
+                  <div class="col-12" />
+                    <div class="form-group">
+                      <label for="nameInput">Jméno a příjmení</label>
+                      <input type="text"
+                             name="name"
+                             class="form-control"
+                             id="nameInput"
+                             placeholder="Jana Nováková"
+                             required />
+                    </div>
+                    <div class="form-group">
+                      <label for="emailInput">Email</label>
+                      <input type="email"
+                             name="email"
+                             class="form-control"
+                             id="emailInput"
+                             placeholder="test@example.com"
+                             required />
+                    </div>
+                    <div class="form-group">
+                      <label for="subjectSelect">Předmět zprávy</label>
+                      <input type="text"
+                             name="subject"
+                             class="form-control"
+                             id="subjectInput"
+                             placeholder="Stížnost"
+                             required />
+                    </div>
+                    <div class="form-group">
+                      <label for="noteInput">Text</label>
+                      <textarea class="form-control"
+                                name="message"
+                                id="noteInput"
+                                placeholder="Co máte na srdci?"
+                                rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <button type="submit"
+                              class="btn btn-primary btn-lg btn-block submit">
+                        Odeslat
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container-fluid">
+      <div class="row">
+        <div class="col-md-4 fcontainer">
+          <h5>Kontakt</h5>
+          <ul>
+            <li>
+              <a href="mailto:info@levnevleky.cz?subject=Dotaz">info@levnevleky.cz</a>
+            </li>
+            <li>
+              <a href="http://www.levnevleky.cz">www.levnevleky.cz</a>
+            </li>
+            <li>Areál: (+420) 602 22 44 43</li>
+            <li>Lyžařská škola: (+420) 722 901 501</li>
+            <li>Půjčovna: (+420) 722 901 501</li>
+          </ul>
+        </div>
+        <div class="col-md-4 fcontainer">
+          <h5>Provozní doba</h5>
+          <ul>
+            <li>9:00 - 16:00</li>
+            <li>v únoru 9:00 - 16:30</li>
+          </ul>
+          <div class="cards">
+            <img src="img/cards/visa.svg" />
+            <img src="img/cards/mastercard.svg" />
+            <img src="img/cards/maestro.svg" />
+          </div>
+        </div>
+        <div class="col-md-4 fcontainer partners">
+          <h5>Naši partneři</h5>
+          <div>
+            <a class="lb" href="http://www.libereckabouda.cz">
+              <img src="img/partners/lb.svg" />
+            </a>
+            <a class="lipa" href="http://www.velkoobchodpapirem.cz">
+              <img src="img/partners/lipa.svg" />
+            </a>
+            <a class="pema" href="http://www.velkoobchoddrogerie.cz">
+              <img src="img/partners/pema.svg" />
+            </a>
           </div>
         </div>
       </div>
-    </section>
-    <section class="page map" id="map">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2>Kde nás najdete</h2>
-                    <div class="mt-2" id="map_container">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
-    </main>
-    <footer class="footer container-fluid">
-        <div class="row">
-          <div class="col-md-4 fcontainer">
-            <h5>Kontakt</h5>
-            <ul>
-              <li>
-                <a href="mailto:info@levnevleky.cz?subject=Dotaz">info@levnevleky.cz</a>
-              </li>
-              <li>
-                <a href="http://www.levnevleky.cz">www.levnevleky.cz</a>
-              </li>
-              <li>(+420) 602 22 44 43</li>
-            </ul>
-          </div>
-          <div class="col-md-4 fcontainer">
-            <h5>Provozní doba</h5>
-            <ul>
-              <li>9:00 - 16:00</li>
-              <li>v únoru 9:00 - 16:30</li>
-            </ul>
-            <div class="cards">
-              <img src="img/cards/visa.svg" />
-              <img src="img/cards/mastercard.svg" />
-              <img src="img/cards/maestro.svg" />
-            </div>
-          </div>
-          <div class="col-md-4 fcontainer partners">
-            <h5>Naši partneři</h5>
-            <div>
-              <a class="lb" href="http://www.libereckabouda.cz">
-                <img src="img/partners/lb.svg" />
-              </a>
-              <a class="lipa" href="http://www.velkoobchodpapirem.cz">
-                <img src="img/partners/lipa.svg" />
-              </a>
-              <a class="pema" href="http://www.velkoobchoddrogerie.cz">
-                <img src="img/partners/pema.svg" />
-              </a>
-            </div>
-          </div>
-        </div>
     </footer>
     <script src="assets/bootstrap.bundle.min.js"></script>
-    <script src="assets/jquery-3.3.1.min.js"></script>    
+    <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="assets/dnk-gallery/js/jquery.donkeyGallery.packed.min.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/webcams.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/weather.io.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmWf6qsumJqePq7RkiNvegqRwtsc_6IN4&callback=initMap" async defer></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/contact-form.js"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmWf6qsumJqePq7RkiNvegqRwtsc_6IN4&callback=initMap" async defer></script>-->
   </body>
 </html>

@@ -175,7 +175,7 @@ h2 {
         width: 18px;
     }
     &.snowflake {
-        width: 28px;        
+        width: 28px;
     }
   }
 
@@ -190,7 +190,7 @@ h2 {
     line-height: normal;
     vertical-align: middle;
   }
-  
+
   .quick-icons {
     @media screen and (max-width: 991px) {
       margin-top: 10px;
@@ -253,6 +253,16 @@ h2 {
       }
     }
   }
+}
+
+.webcams {
+    .webcam, .webcam-main {
+        display: block;
+    }
+
+    .thumbnails .webcam {
+        margin-bottom: 10px;
+    }
 }
 
 .skimap {
@@ -359,6 +369,17 @@ h2 {
       }
 }
 
+.school {
+    .letter {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .letter > div {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 footer {
   background: #f4f7f6;
 
@@ -387,27 +408,27 @@ footer {
     img {
       width: 130px;
       margin: 10px 35px 10px 0;
-      
+
       @include media-breakpoint-down(md) {
             width: 80px;
       }
-      
+
     }
 
     .lb img {
       width: 280px;
-      
+
       @include media-breakpoint-down(md) {
             width: 200px;
       }
     }
   }
-  
+
   .cards {
     img {
       width: 70px;
       margin: 10px 35px 10px 0;
-      
+
       @include media-breakpoint-down(md) {
             width: 50px;
       }
