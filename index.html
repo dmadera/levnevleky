@@ -12,9 +12,9 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark top">
-        <a href="#" class="navbar-brand logo">
+        <a href="#home" class="navbar-brand logo">
           <h1 class="text-hide">SKI AREÁL Luisino údolí</h1>
           <img src="img/logo.svg" alt="SKI AREÁL Luisino údolí" />
         </a>
@@ -29,23 +29,29 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#areal">Areál</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#webcams">Webkamery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#prices">Ceník</a>
+              <a class="nav-link" href="#skimap">Skimapa</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#school">Škola</a>
+              <a class="nav-link" href="#prices">Ceník</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#rental">Půjčovna</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#map">Kontakt</a>
+              <a class="nav-link" href="#school">Škola</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">Kde nás najdete</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
             </li>
           </ul>
         </div>
@@ -155,7 +161,8 @@
           </div>
         </div>
       </section>
-      <section class="page webcams" id="webcams">
+       <a class="page-anchor" id="webcams">&nbsp;</a>
+      <section class="page webcams">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -173,7 +180,8 @@
         </div>
         </div>
       </section>
-      <section class="page skimap" id="skimap">
+      <a class="page-anchor" id="skimap">&nbsp;</a>
+      <section class="page skimap">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -422,7 +430,8 @@
             </div>
           </div>
       </section>
-      <section class="page map" id="map">
+      <a class="page-anchor" id="map">&nbsp;</a>
+      <section class="page map">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -433,7 +442,8 @@
           </div>
         </div>
       </section>
-      <section class="page contact" id="contact">
+      <a class="page-anchor" id="contact">&nbsp;</a>
+      <section class="page contact">
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -534,15 +544,36 @@
         </div>
       </div>
     </footer>
-    <script src="assets/bootstrap.bundle.min.js"></script>
+    <div id="modal-info" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-text"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+      </div>
+    </div>
+  </div>
+</div>
     <script src="assets/jquery-3.3.1.min.js"></script>
+    <script src="assets/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/bootstrap.bundle.min.js"></script>
     <script src="assets/dnk-gallery/js/jquery.donkeyGallery.packed.min.js"></script>
+    <script src="js/scroll.js"></script>
     <script src="js/map.js"></script>
     <script src="js/webcams.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/weather.io.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/contact-form.js"></script>
+    <script src="js/message.js"></script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmWf6qsumJqePq7RkiNvegqRwtsc_6IN4&callback=initMap" async defer></script>-->
   </body>
 </html>
