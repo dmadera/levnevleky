@@ -11,6 +11,7 @@ $(document).ready(function() {
 						location.hash = target; //attach the hash (#jumptarget) to the pageurl
 				});
 
+                $('.navbar-toggler').click();
 				return false;
 		});
 });
