@@ -26,7 +26,7 @@ try {
     }
 
     $mail = new MyPHPMailer(true);
-    $mail->addAddress('info@levnevleky.cz');
+    $mail->addAddress('madera.dan@gmail.com');
     $mail->addReplyTo($email, $name);
     $mail->setSubject($subject);
     $htmlmsg = nl2br($message);
