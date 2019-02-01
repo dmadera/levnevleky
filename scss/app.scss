@@ -32,6 +32,10 @@ body {
   top: -35px;
 }
 
+*[role="button"]:hover {
+    cursor: pointer;
+}
+
 img {
   width: 100%;
   height: auto;
