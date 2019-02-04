@@ -8590,6 +8590,14 @@ ul {
 }
 
 h2 {
+  margin: 16px 0 15px 16px;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-shadow: 1.2px 1.2px #808080;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h3 {
   display: block;
   width: 100%;
   margin-top: 10px;
@@ -8627,7 +8635,14 @@ h2 {
 }
 .welcome .card {
   opacity: 0.75;
-  height: 250px;
+}
+.welcome .card.weather {
+  padding-bottom: 20px;
+}
+@media screen and (max-width: 991px) {
+  .welcome .card.weather {
+    padding-bottom: 0;
+  }
 }
 @media screen and (max-width: 991px) {
   .welcome .card {
@@ -8645,35 +8660,39 @@ h2 {
 .welcome .card *:not(.fa) {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.welcome .card .card-header {
+.welcome .areal {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.welcome .areal td {
+  padding: 8px;
+  width: 100%;
+  white-space: nowrap;
+  border-bottom: 1px solid #D3D3D3;
+}
+.welcome .areal td:last-child {
+  padding-right: 12px;
+}
+.welcome .areal th {
+  width: 100%;
+  border-bottom: 1px solid #A9A9A9;
+  padding: 15px 10px 8px 10px;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 0.92em;
   color: #434343;
   text-align: center;
 }
-.welcome .table img {
-  width: 21px;
+.welcome .areal tr:last-child td {
+  border: 0;
+  padding-bottom: 8px;
 }
-.welcome .table td {
-  padding: 0.4em;
-  vertical-align: bottom;
-}
-.welcome .table img.check {
-  width: 16px;
-}
-.welcome .card .card-header:nth-child(n+2) {
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  padding: 10px 0 7px 0;
-}
-.welcome .areal .lifts {
-  margin: 7px 0 10px 0;
-}
-.welcome .areal .lifts tr:first-child td {
+.welcome .areal tr:first-child th {
   border-top: 0;
 }
-.welcome .areal .lifts .icon {
-  padding: 3px 10px 3px 10px;
+.welcome .areal .icon {
+  padding: 5px 10px;
   height: 40px;
   width: 40px;
 }
@@ -8686,38 +8705,29 @@ h2 {
   background: #a0a0a0;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
-.welcome .areal .curweather .row {
-  margin: 0;
-  font-size: 0.8rem;
+.welcome .areal .status {
+  background-size: 28px;
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  min-width: 85px;
 }
-.welcome .areal .curweather .icon {
-  line-height: 50px;
-  margin: 0 15px 0 10px;
-  display: inline-block;
+.welcome .areal .status.open {
+  background-image: url("../img/layout/open.svg");
 }
-.welcome .areal .curweather .col-8,
-.welcome .areal .curweather .col-4 {
-  padding: 0;
-  text-align: center;
+.welcome .areal .status.closed {
+  background-image: url("../img/layout/closed.svg");
 }
-.welcome .areal .curweather .icon {
-  vertical-align: middle;
+.welcome .areal #snowheight::after {
+  content: "cm";
 }
-.welcome .areal .curweather .icon.thermometer {
-  width: 18px;
+.welcome .areal #temperature::after {
+  content: "°C";
 }
-.welcome .areal .curweather .icon.snowflake {
-  width: 28px;
-}
-.welcome .areal .curweather .icon-text {
-  height: 60px;
-  line-height: 60px;
-}
-.welcome .areal .curweather .icon-text span {
-  display: inline-block;
-  text-align: center;
-  line-height: normal;
-  vertical-align: middle;
+.welcome .areal #lastchange {
+  padding: 3px 5px;
+  border: 0;
+  text-align: right;
+  font-size: 11px;
 }
 @media screen and (max-width: 991px) {
   .welcome .quick-icons {
@@ -8771,6 +8781,16 @@ h2 {
 }
 .welcome .quick-icons ul li:last-child a {
   border-right: 0;
+}
+.welcome .weather-container-relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.welcome .weather-card-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .webcams .webcam, .webcams .webcam-main {

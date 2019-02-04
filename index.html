@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>SKI AREÁL Luision údolí</title>
+    <title>SKI AREÁL Luision údolí Krkonoše</title>
     <meta name="description" content="SKI AREÁL Luisino údolí">
     <meta name="author" content="Daniel Maděra">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
@@ -17,6 +17,7 @@
         <a href="#home" class="navbar-brand logo">
           <h1 class="text-hide">SKI AREÁL Luisino údolí</h1>
           <img src="img/logo.svg" alt="SKI AREÁL Luisino údolí" />
+          <h2 class="subtitle d-none d-lg-block">Rodinné lyžování v srdci Krkonoš</h2>
         </a>
         <button class="navbar-toggler navbar-toggler-right"
                 type="button"
@@ -66,39 +67,93 @@
               </div>
               <div class="row">
                 <div class="col-lg-3">
-                  <div class="card areal">
-                    <div class="card-header">Vleky</div>
-                    <table class="table lifts">
+                  <table class="card areal">
+                    <tbody>
                       <tr>
-                        <td class="icon grey-bg"><img src="img/layout/kotva.svg" /></td>
+                        <th colspan="4">Vleky</th>
+                      </tr>
+                      <tr class="kotva">
+                        <td class="icon grey-bg">
+                          <img src="img/layout/kotva.svg" />
+                        </td>
                         <td>KOTVA</td>
                         <td>500m</td>
-                        <td class="text-right"><img src="img/layout/open.svg" /></td>
+                        <td class="status" title=""></td>
                       </tr>
-                      <tr>
-                        <td class="icon grey-bg"><img src="img/layout/poma.svg" /></td>
+                      <tr class="poma">
+                        <td class="icon grey-bg">
+                          <img src="img/layout/poma.svg" />
+                        </td>
                         <td>POMA</td>
                         <td>300m</td>
-                        <td class="text-right"><img src="img/layout/closed.svg" /></td>
+                        <td class="status" title=""></td>
                       </tr>
-                    </table>
-                    <div class="card-header">Aktuální stav</div>
-                    <div class="curweather">
-                      <div class="row">
-                        <div class="col-4">
-                          <span class="icon thermometer"><img src="img/layout/thermometer.svg" /></span>
-                          <span class="icon-text"><span>3°C</span></span>
-                        </div>
-                        <div class="col-8">
-                          <span class="icon snowflake"><img src="img/layout/snowflake.svg" /></span>
-                          <span class="icon-text">
-                            <span>40-50cm<br/>technicky<br/>zasněžujeme</span>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    <tr>
+                      <th colspan="4">Sjezovky</th>
+                    </tr>
+                    <tr class="slunecnastran">
+                      <td class="icon">
+                        <img src="img/layout/red-slope.svg" />
+                      </td>
+                      <td>Slunečná stáň</td>
+                      <td>550m</td>
+                      <td class="status" title=""></td>
+                    </tr>
+                    <tr class="ulesa">
+                      <td class="icon">
+                        <img src="img/layout/blue-slope.svg" />
+                      </td>
+                      <td>U lesa</td>
+                      <td>600m</td>
+                      <td class="status" title=""></td>
+                    </tr>
+                    <tr class="snowpark">
+                      <td class="icon">
+                        <img src="img/layout/snowpark-slope.svg" />
+                      </td>
+                      <td>Snowpark</td>
+                      <td>300m</td>
+                      <td class="status open" title=""></td>
+                    </tr>
+                    <tr>
+                      <th colspan="4">Aktuální stav</th>
+                    </tr>
+                    <tr class="temperature">
+                      <td class="icon">
+                        <img src="img/layout/thermometer.svg" />
+                      </td>
+                      <td>Teplota</td>
+                      <td colspan="2" class="text-right">
+                        <span id="temperature"></span>
+                        <span id="weathertext"></span>
+                      </td>
+                    </tr>
+                    <tr class="snow">
+                      <td class="icon">
+                        <img src="img/layout/snowflake.svg" />
+                      </td>
+                      <td>Sníh</td>
+                      <td colspan="2" class="text-right">
+                        <span id="snowheight"></span>
+                        <span id="snowtype"></span>
+                      </td>
+                    </tr>
+                    <tr class="snowmaking d-none">
+                      <td class="icon">
+                        <img src="img/layout/snowmaking.svg" />
+                      </td>
+                      <td>Zasněžujeme</td>
+                      <td colspan="2" class="text-right">
+                        <span id="snowmaking"></span>
+                        <span></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="4" id="lastchange"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
                 <div class="col-lg-6 quick-icons">
                   <div class="contain">
                     <div>
@@ -128,16 +183,20 @@
                   </div>
                 </div>
                 <div class="col-lg-3">
-                  <div class="card weather">
-                    <a class="weatherwidget-io"
-                       href="https://forecast7.com/cs/50d6615d62/strazne/"
-                       data-label_1="LUISINO ÚDOLÍ"
-                       data-label_2="Počasí"
-                       data-font="Helvetica"
-                       data-days="5"
-                       data-theme="pure">
-                      DOLNÍ DVŮR Počasí
-                    </a>
+                  <div class="weather-container-relative" >
+                  <div class="weather-card-container"> 
+                    <div class="card weather">
+                      <a class="weatherwidget-io"
+                         href="https://forecast7.com/cs/50d6615d62/strazne/"
+                         data-label_1="LUISINO ÚDOLÍ"
+                         data-label_2="Počasí"
+                         data-font="Helvetica"
+                         data-days="5"
+                         data-theme="pure">
+                        LUISINO ÚDOLÍ Počasí
+                      </a>
+                    </div>
+                  </div>
                   </div>
                 </div>
               </div>
@@ -149,7 +208,7 @@
       <section class="page areal">
         <div class="container">
           <div class="row">
-            <h2>Areál</h2>
+            <h3>Areál</h3>
             <div class="col-12 col-lg-6">
               <p>
               V areálu jsou k dispozici 2 vleky o délkách 500 m a 300 m s obtížností sjezdovek střední a lehká. Tým areálu za pomoci profesionální techniky a umělého zasněžování se postará o ideální podmínky pro lyžování v průběhu celé lyžařské sezóny. Penzion Liberecká Bouda u horní stanice vleku poskytuje ubytovací, wellness a restaurační služby včetně venkovního Skibaru. Parkoviště je u nás zcela zdarma pouhých pár desítek metrů od spodní stanice lyžařského vleku. Od sezóny 2018/19 výuku lyžování a snowboardingu zajišťuje lyžařská škola Mountain Rangers, která se kvalifikovaně postará o začínající i zkušenější lyžaře včetně Vašich ratolestí s celodenním doprovodným programem nebo lyžařskými závody.
@@ -166,7 +225,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Webkamery</h2>
+              <h3>Webkamery</h3>
             </div>
             <div class="col-12 col-md-9 d-none d-md-block">
               <a class="webcam-main" data-name="udoli" data-link="https://www.libereckabouda.cz/kamera/ip-camera-lb-<cam_name>.jpg"><img src="" /></a>
@@ -185,7 +244,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Skimapa</h2>
+              <h3>Skimapa</h3>
               <div class="skimap">
                 <div class="map"></div>
               </div>
@@ -198,7 +257,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Ceník skipasů</h2>
+              <h3>Ceník skipasů</h3>
             </div>
             <div class="col-xl-6">
               <table class="table table-bordered table-hover">
@@ -362,7 +421,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Půjčovna</h2>
+              <h3>Půjčovna</h3>
               <table class="table table-bordered table-hover">
                 <tbody>
                   <tr><th>Doba půjčení</th><th>Cena za komplet</th></tr>
@@ -392,7 +451,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Lyžařská škola</h2>
+              <h3>Lyžařská škola</h3>
               <div class="row letter">
                 <div class="col-6 col-lg-3">
                   <img src="img/school/page1.jpg" />
@@ -436,7 +495,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Kde nás najdete</h2>
+              <h3>Kde nás najdete</h3>
               <div class="mt-2" id="map_container">
               </div>
             </div>
@@ -448,7 +507,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2>Napište nám</h2>
+              <h3>Napište nám</h3>
               <form id="contactForm" method="post">
                 <div class="row">
                   <div class="col-12" />
@@ -569,12 +628,14 @@
     <script src="assets/dnk-gallery/js/jquery.donkeyGallery.packed.min.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/map.js"></script>
+    <script src="js/ski-info.js"></script>
     <script src="js/webcams.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/weather.io.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/contact-form.js"></script>
     <script src="js/message.js"></script>
+
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmWf6qsumJqePq7RkiNvegqRwtsc_6IN4&callback=initMap" async defer></script>-->
   </body>
 </html>

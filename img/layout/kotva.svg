@@ -12,8 +12,8 @@
    viewBox="0 0 300 300"
    height="300mm"
    width="300mm"
-   sodipodi:docname="icon-kotva.svg"
-   inkscape:version="0.92.1 r15371">
+   sodipodi:docname="kotva.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -24,14 +24,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1016"
+     inkscape:window-height="1006"
      id="namedview4635"
      showgrid="false"
-     inkscape:zoom="0.36292014"
-     inkscape:cx="-86.596469"
-     inkscape:cy="636.72185"
+     inkscape:zoom="0.18146007"
+     inkscape:cx="177.29103"
+     inkscape:cy="537.41782"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg8" />
   <defs
@@ -49,7 +49,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="matrix(0.50522682,0,0,0.46487447,552.39543,106.11352)"
+     transform="matrix(0.46828483,0,0,0.43088303,522.87899,108.41629)"
      id="g6672">
     <g
        transform="matrix(-1.3201387,0,0,1.306131,-506.84381,-224.17147)"
@@ -158,7 +158,8 @@
   </g>
   <g
      id="g4802"
-     style="fill:#ffffff;fill-opacity:1">
+     style="fill:#ffffff;fill-opacity:1"
+     transform="matrix(0.92688039,0,0,0.92688039,10.384007,62.572928)">
     <path
        sodipodi:nodetypes="cczzcc"
        d="m -794.95417,172.60706 277.83899,2.67657 c 0,0 15.02455,-8.85561 17.26047,-21.99995 2.23592,-13.14434 -0.34712,-38.1422 -6.84705,-39.37616 -6.49993,-1.23394 -15.24001,30.65224 -15.24001,30.65224 l -272.74813,-0.55927"
