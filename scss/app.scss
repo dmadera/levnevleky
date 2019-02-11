@@ -21,6 +21,7 @@ body {
   min-width: 330px;
   font-family: Arial, sans-serif;
   background: #f4f7f6;
+  font-size: 0.88rem;
 }
 
 .page {
@@ -50,7 +51,7 @@ h2 {
   font-size: 0.8em;
   text-transform: uppercase;
   text-shadow: 1.2px 1.2px #808080;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  //font-family: "Oswald", cursive, sans-serif;
 }
 
 h3 {
@@ -63,6 +64,60 @@ h3 {
   font-family: 'Oswald', sans-serif;
   color: #000;
   border-top: 1px solid #8d734a;
+}
+
+.navbar {
+  .logo {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    h1 {
+      margin:0 ;
+    }
+
+    img {
+      width: 19vw;
+      min-width: 140px;
+      max-width: 170px;
+    }
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.10em;
+    text-transform: uppercase;
+    margin-right: 8px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .8);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar.top {
+    background: none !important;
+
+
+    .logo {
+      margin: 5px 15px;
+
+      img {
+        max-width: 330px;
+      }
+    }
+
+    .navbar-nav {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      margin-left: 30px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .logo {
+      margin-top: 60px !important;
+    }
 }
 
 .welcome {
@@ -246,21 +301,21 @@ h3 {
 
       li a {
         display: block;
-        padding: 19px;
+        padding: 17px;
         border-right: 1px solid rgba(255, 255, 255, .75);
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
 
         img {
-          width: 32px;
+          width: 26px;
         }
       }
 
       li a:hover {
-        padding: 15px;
+        padding: 14px;
 
         img {
-          width: 40px;
+          width: 32px;
         }
       }
 
@@ -270,16 +325,18 @@ h3 {
     }
   }
 
-  .weather-container-relative {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
+  @media screen and (min-width: 991px) {
+    .weather-container-relative {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
 
-  .weather-card-container {
-    position: absolute;
-    bottom: 0; 
-    width: 100%;
+    .weather-card-container {
+      position: absolute;
+      bottom: 0; 
+      width: 100%;
+    }
   }
 }
 
@@ -331,59 +388,6 @@ h3 {
 
     td:not(.no-unit):nth-child(n+2):after {
       content: " Kč";
-    }
-  }
-}
-
-.navbar {
-  .logo {
-    display: block;
-    margin: 0;
-    padding: 0;
-
-    h1 {
-      margin:0 ;
-    }
-
-    img {
-      width: 19vw;
-      min-width: 140px;
-      max-width: 170px;
-    }
-  }
-
-  .navbar-nav .nav-link {
-    font-size: 1.20em;
-    text-transform: uppercase;
-    margin-right: 10px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, .8);
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .navbar.top {
-    background: none !important;
-
-
-    .logo {
-      margin: 5px 15px;
-
-      img {
-        max-width: 330px;
-      }
-    }
-
-    .navbar-nav {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-
-      .nav-link {
-        text-transform: uppercase;
-        font-size: 1.25em;
-        margin-right: 20px;
-      }
     }
   }
 }

@@ -9,6 +9,6 @@ from = web@b-soul.cz
 
 [holidayinfo]
 url = http://exports.holidayinfo.cz/xml_export.php
-params[dc] = ymzah8ffm5vhx411
+params[dc] = 1234567889990
 
 
