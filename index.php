@@ -746,6 +746,6 @@
     <script src="js/gallery.js"></script>
     <script src="js/contact-form.js"></script>
     <script src="js/message.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmWf6qsumJqePq7RkiNvegqRwtsc_6IN4&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikey; ?>&callback=initMap" async defer></script>
   </body>
 </html>

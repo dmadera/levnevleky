@@ -11,4 +11,5 @@ from = web@b-soul.cz
 url = http://exports.holidayinfo.cz/xml_export.php
 params[dc] = 1234567889990
 
-
+[map]
+apikey = AIzaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAasdsa
