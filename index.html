@@ -17,7 +17,9 @@
         <a href="#home" class="navbar-brand logo">
           <h1 class="text-hide">SKI AREÁL Luisino údolí</h1>
           <img src="img/logo.svg" alt="SKI AREÁL Luisino údolí" />
-          <h2 class="subtitle d-none d-lg-block">Rodinné lyžování v srdci Krkonoš</h2>
+          <h2 class="subtitle d-none d-lg-block">
+            Rodinné lyžování v srdci Krkonoš
+          </h2>
         </a>
         <button class="navbar-toggler navbar-toggler-right"
                 type="button"
@@ -63,140 +65,140 @@
         <div class="site-wrapper">
           <div class="site-wrapper-inner">
             <div class="inner">
-              <div class="row">
-              </div>
-              <div class="row">
-                <div class="col-lg-5 col-xl-4">
-                  <table class="card areal">
-                    <tbody>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-5 col-xl-4">
+                    <table class="card areal table">
+                      <tbody>
+                        <tr>
+                          <th colspan="4">Vleky</th>
+                        </tr>
+                        <tr class="kotva">
+                          <td class="icon grey-bg">
+                            <img src="img/layout/kotva.svg" />
+                          </td>
+                          <td>KOTVA</td>
+                          <td>500m</td>
+                          <td class="status" title=""></td>
+                        </tr>
+                        <tr class="poma">
+                          <td class="icon grey-bg">
+                            <img src="img/layout/poma.svg" />
+                          </td>
+                          <td>POMA</td>
+                          <td>300m</td>
+                          <td class="status" title=""></td>
+                        </tr>
                       <tr>
-                        <th colspan="4">Vleky</th>
+                        <th colspan="4">Sjezovky</th>
                       </tr>
-                      <tr class="kotva">
-                        <td class="icon grey-bg">
-                          <img src="img/layout/kotva.svg" />
+                      <tr class="slunecnastran">
+                        <td class="icon">
+                          <img src="img/layout/red-slope.svg" />
                         </td>
-                        <td>KOTVA</td>
-                        <td>500m</td>
+                        <td>Slunečná stáň</td>
+                        <td>550m</td>
                         <td class="status" title=""></td>
                       </tr>
-                      <tr class="poma">
-                        <td class="icon grey-bg">
-                          <img src="img/layout/poma.svg" />
+                      <tr class="ulesa">
+                        <td class="icon">
+                          <img src="img/layout/blue-slope.svg" />
                         </td>
-                        <td>POMA</td>
+                        <td>U lesa</td>
+                        <td>600m</td>
+                        <td class="status" title=""></td>
+                      </tr>
+                      <tr class="snowpark">
+                        <td class="icon">
+                          <img src="img/layout/snowpark-slope.svg" />
+                        </td>
+                        <td>Snowpark</td>
                         <td>300m</td>
-                        <td class="status" title=""></td>
+                        <td class="status open" title=""></td>
                       </tr>
-                    <tr>
-                      <th colspan="4">Sjezovky</th>
-                    </tr>
-                    <tr class="slunecnastran">
-                      <td class="icon">
-                        <img src="img/layout/red-slope.svg" />
-                      </td>
-                      <td>Slunečná stáň</td>
-                      <td>550m</td>
-                      <td class="status" title=""></td>
-                    </tr>
-                    <tr class="ulesa">
-                      <td class="icon">
-                        <img src="img/layout/blue-slope.svg" />
-                      </td>
-                      <td>U lesa</td>
-                      <td>600m</td>
-                      <td class="status" title=""></td>
-                    </tr>
-                    <tr class="snowpark">
-                      <td class="icon">
-                        <img src="img/layout/snowpark-slope.svg" />
-                      </td>
-                      <td>Snowpark</td>
-                      <td>300m</td>
-                      <td class="status open" title=""></td>
-                    </tr>
-                    <tr>
-                      <th colspan="4">Aktuální stav</th>
-                    </tr>
-                    <tr class="temperature">
-                      <td class="icon">
-                        <img src="img/layout/thermometer.svg" />
-                      </td>
-                      <td>Teplota</td>
-                      <td colspan="2" class="text-right">
-                        <span id="temperature"></span>
-                        <span id="weathertext"></span>
-                      </td>
-                    </tr>
-                    <tr class="snow">
-                      <td class="icon">
-                        <img src="img/layout/snowflake.svg" />
-                      </td>
-                      <td>Sníh</td>
-                      <td colspan="2" class="text-right">
-                        <span id="snowheight"></span>
-                        <span id="snowtype"></span>
-                      </td>
-                    </tr>
-                    <tr class="snowmaking d-none">
-                      <td class="icon">
-                        <img src="img/layout/snowmaking.svg" />
-                      </td>
-                      <td>Zasněžujeme</td>
-                      <td colspan="2" class="text-right">
-                        <span id="snowmaking"></span>
-                        <span></span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="4" id="lastchange"></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-                <div class="col-lg-4 col-xl-4 quick-icons">
-                  <div class="contain">
-                    <div>
-                      <ul>
-                        <li>
-                          <a href="https://www.facebook.com/libereckaboudakrkonose/">
-                            <img src="img/layout/facebook.svg" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.youtube.com/channel/UCwzlYLxTBi_-aDx9sfrNbfg">
-                            <img src="img/layout/youtube.svg" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#contact">
-                            <img src="img/layout/email.svg" />
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#webcams">
-                            <img src="img/layout/webcam.svg" />
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                      <tr>
+                        <th colspan="4">Aktuální stav</th>
+                      </tr>
+                      <tr class="temperature">
+                        <td class="icon">
+                          <img src="img/layout/thermometer.svg" />
+                        </td>
+                        <td>Teplota</td>
+                        <td colspan="2" class="text-right">
+                          <span id="temperature"></span>
+                          <span id="weathertext"></span>
+                        </td>
+                      </tr>
+                      <tr class="snow">
+                        <td class="icon">
+                          <img src="img/layout/snowflake.svg" />
+                        </td>
+                        <td>Sníh</td>
+                        <td colspan="2" class="text-right">
+                          <span id="snowheight"></span>
+                          <span id="snowtype"></span>
+                        </td>
+                      </tr>
+                      <tr class="snowmaking d-none">
+                        <td class="icon">
+                          <img src="img/layout/snowmaking.svg" />
+                        </td>
+                        <td>Zasněžujeme</td>
+                        <td colspan="2" class="text-right">
+                          <span id="snowmaking"></span>
+                          <span></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="4" id="lastchange"></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <div class="col-lg-3 col-xl-4">
-                  <div class="weather-container-relative" >
-                  <div class="weather-card-container"> 
-                    <div class="card weather">
-                      <a class="weatherwidget-io"
-                         href="https://forecast7.com/cs/50d6615d62/strazne/"
-                         data-label_1="LUISINO ÚDOLÍ"
-                         data-label_2="Počasí"
-                         data-font="Helvetica"
-                         data-days="5"
-                         data-theme="pure">
-                        LUISINO ÚDOLÍ Počasí
-                      </a>
+                  <div class="col-lg-4 col-xl-4 quick-icons">
+                    <div class="contain">
+                      <div>
+                        <ul>
+                          <li>
+                            <a href="https://www.facebook.com/libereckaboudakrkonose/">
+                              <img src="img/layout/facebook.svg" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="https://www.youtube.com/channel/UCwzlYLxTBi_-aDx9sfrNbfg">
+                              <img src="img/layout/youtube.svg" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#contact">
+                              <img src="img/layout/email.svg" />
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#webcams">
+                              <img src="img/layout/webcam.svg" />
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
+                  <div class="col-lg-3 col-xl-4">
+                    <div class="weather-container-relative" >
+                    <div class="weather-card-container"> 
+                      <div class="card weather">
+                        <a class="weatherwidget-io"
+                           href="https://forecast7.com/cs/50d6615d62/strazne/"
+                           data-label_1="LUISINO ÚDOLÍ"
+                           data-label_2="Počasí"
+                           data-font="Helvetica"
+                           data-days="5"
+                           data-theme="pure">
+                          LUISINO ÚDOLÍ Počasí
+                        </a>
+                      </div>
+                    </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -304,20 +306,19 @@
                   </tr>
                   <tr>
                     <td>Školní skupiny (10 a více žáků)</td>
-                    <td>320/os</td>
+                    <td>320</td>
                     <td class="no-unit">doprovod zdarma</td>
                   </tr>
                   <tr>
-                    <th>Rodinná nabídka</th>
-                    <th colspan="2"></th>
+                    <th colspan="3">Rodinná nabídka</th>
                   </tr>
                   <tr>
-                    <td>Rodinná 2 dospělí + 1 dítě (1. dítě 190,-)</td>
-                    <td colspan="2">1050</td>
+                    <td colspan="2">Rodinná 2 dospělí + 1 dítě (1. dítě 190,-)</td>
+                    <td>1050</td>
                   </tr>
                   <tr>
-                    <td>Rodinná 2 dospělí + 2 děti (2. dítě 140,-)</td>
-                    <td colspan="2">1190</td>
+                    <td colspan="2">Rodinná 2 dospělí + 2 děti (2. dítě 140,-)</td>
+                    <td>1190</td>
                   </tr>
                 </tbody>
               </table>
@@ -410,6 +411,16 @@
                   <tr>
                     <td colspan="2">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td>
                   </tr>
+                  <tr>
+                    <td colspan="2" class="cards">
+                      <span class="float-left">
+                        Příjímáme platební karty.
+                      </span>
+                      <img src="img/cards/visa.svg" />
+                      <img src="img/cards/mastercard.svg" />
+                      <img src="img/cards/maestro.svg" />
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -424,19 +435,44 @@
               <h3>Půjčovna</h3>
               <table class="table table-bordered table-hover">
                 <tbody>
-                  <tr><th>Doba půjčení</th><th>Cena za komplet</th></tr>
-                  <tr><td>Dopoledne od 09:00 do 12:30</td><td>280</td></tr>
-                  <tr><td>Odpoledne od 12:30 do 16:00</td><td>280</td></tr>
-                  <tr><td>Celodenní</td><td>340</td></tr>
-                  <tr><td>Vícedenní (cena za 1 den)</td><td>300</td></tr>
-                  <tr><td>Půjčovné v rámci lyžařské školy (max 2h)</td><td>200</td></tr>
-                  <tr><th colspan="2">Doplňující informace</th></tr>
-                  <tr><td colspan="2">K dispozici je kompletní vybavení na SNOWBOARD či LYŽE.</td></tr>
-                  <tr><td colspan="2">Nutný alespoň jeden doklad totožnosti.</td></tr>
-                  <tr><td colspan="2">Odpovědnost za nadměrné opotřebení, poškození či zrátu nese nájemce.</td></tr>
-                  <tr><td colspan="2">Helma k půjčenému setu je zdarma.</td></tr>
-                  <tr><th colspan="2">Kontakt</th></tr>
-                  <tr><td colspan="2">
+                  <tr>
+                    <th>Doba půjčení</th><th>Cena za komplet</th>
+                  </tr>
+                  <tr>
+                    <td>Dopoledne od 09:00 do 12:30</td><td>280</td>
+                  </tr>
+                  <tr>
+                    <td>Odpoledne od 12:30 do 16:00</td><td>280</td>
+                  </tr>
+                  <tr>
+                    <td>Celodenní</td><td>340</td>
+                  </tr>
+                  <tr>
+                    <td>Vícedenní (cena za 1 den)</td><td>300</td>
+                  </tr>
+                  <tr>
+                    <td>Půjčovné v rámci lyžařské školy (max 2h)</td><td>200</td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">Doplňující informace</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2">K dispozici je kompletní vybavení na SNOWBOARD či LYŽE.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Nutný alespoň jeden doklad totožnosti.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Odpovědnost za nadměrné opotřebení, poškození či zrátu nese nájemce.</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Helma k půjčenému setu je zdarma.</td>
+                  </tr>
+                  <tr>
+                    <th colspan="2">Kontakt</th>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
                       <a href="mailto:pujcovna@levnevleky.cz?subject=Dotaz">pujcovna@levnevleky.cz</a>
                     </td></tr>
                     <tr><td colspan="2">(+420) 722 901 501</td></tr>
@@ -470,19 +506,67 @@
                 <div class="col-12">
                   <table class="table table-bordered table-hover">
                     <tbody>
-                      <tr><th>Osoby</th><th>Doba výuky</th><th>Cena</th></tr>
-                      <tr><td>Děti (výuka + skipas)</td><td class="no-unit">1 hodina</td><td>460,-</td></tr>
-                      <tr><td>Dospělí (výuka + skipas)</td><td class="no-unit">1 hodina</td><td>560,-</td></tr>
-                      <tr><td colspan="2">Výuka 4 hodiny a více</td><td>sleva</td></tr>
-                      <tr><td colspan="2">Skupinová výuka</td><td>na dotaz</td></tr>
-                      <tr><th colspan="3">Doplňující informace</th></tr>
-                      <tr><td colspan="3">Od sezóny 2018/19 nová škola <b>Mountain Rangers</b> i s doprovodným programem pro děti.</td></tr>
-                      <tr><td colspan="3">Při zakoupení lyžařské školy - skipass ZDARMA.</td></tr>
-                      <tr><td colspan="3">Instruktoři jsou trvale přítomeni v areálu.</td></tr>
-                      <tr><td colspan="3">Jednou týdně škola pořádá závody pro děti.</td></tr>
-                      <tr><th colspan="3">Kontakt</th></tr>
-                      <tr><td colspan="3"><a href="mailto:skola@levnevleky.cz?subject=Dotaz">skola@levnevleky.cz</a></td></tr>
-                      <tr><td colspan="3">(+420) 722 901 501</td></tr>
+                      <tr>
+                        <th>Osoby</th>
+                        <th>Doba výuky</th>
+                        <th>Cena</th>
+                      </tr>
+                      <tr>
+                        <td>Děti (výuka + skipas)</td>
+                        <td class="no-unit">1 hodina</td>
+                        <td>460,-</td>
+                      </tr>
+                      <tr>
+                        <td>Dospělí (výuka + skipas)</td>
+                        <td class="no-unit">1 hodina</td>
+                        <td>560,-</td>
+                      </tr>
+                      <tr>
+                        <td>Skupinová výuka</td>
+                        <td class="no-unit">1 hodina</td>
+                        <td class="no-unit">na dotaz</td>
+                      </tr>
+                      <tr>
+                        <td>Vícehodinová výuka</td>
+                        <td class="no-unit">minimálně 4 hodiny</td>
+                        <td class="no-unit">sleva</td>
+                      </tr>
+                      <tr>
+                        <th colspan="3">Doplňující informace</th>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          Od sezóny 2018/19 nová škola <b>Mountain Rangers</b> i s doprovodným programem pro děti.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          Při zakoupení lyžařské školy - skipass ZDARMA.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          Instruktoři jsou trvale přítomeni v areálu.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          Jednou týdně škola pořádá závody pro děti.
+                        </td>
+                      </tr>
+                      <tr>
+                        <th colspan="3">Kontakt</th>
+                      </tr>
+                      <tr>
+                        <td colspan="3">
+                          <a href="mailto:skola@levnevleky.cz?subject=Dotaz">
+                          skola@levnevleky.cz
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3">(+420) 777 448 455</td>
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -571,8 +655,8 @@
             <li>
               <a href="http://www.levnevleky.cz">www.levnevleky.cz</a>
             </li>
-            <li>Areál: (+420) 602 22 44 43</li>
-            <li>Lyžařská škola: (+420) 722 901 501</li>
+            <li>Areál: (+420) 722 901 501</li>
+            <li>Lyžařská škola: (+420) 777 448 455</li>
             <li>Půjčovna: (+420) 722 901 501</li>
           </ul>
         </div>
