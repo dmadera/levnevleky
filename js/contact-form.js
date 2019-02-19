@@ -9,6 +9,8 @@ $('#contactForm').submit(function(event) {
     var $form = $(this);
     var $inputs = $form.find("input, select, button, textarea");
     var serializedData = $form.serialize();
+    serializedData['token'] = window.localStorage.getItem('token');
+
     $inputs.prop("disabled", true);
 
     request = $.ajax({

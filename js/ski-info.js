@@ -1,12 +1,15 @@
 $(document).ready(function() {
 	var response_obj = {};
 
+  var serializedData = {};
+  serializedData['token'] = window.localStorage.getItem('token');
+
 	request = $.ajax({
         url: "scripts/ski-info.php",
         type: "get",
         dataType: 'text',
         contentType: 'application/x-www-form-urlencoded',
-        data: {}
+        data: serializedData
     });
 
     request.done(function(response, textStatus, jqXHR) {

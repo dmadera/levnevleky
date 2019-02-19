@@ -1,7 +1,9 @@
 $(document).ready(function() {
 		$('a[href^="#"]').click(function(e) {
 				e.preventDefault(); // prevent hard jump, the default behavior
-
+				
+				// Hide menu on click
+				$(".navbar-collapse").removeClass('show');
 				var target = $(this).attr("href"); // Set the target as variable
 
 				// perform animated scrolling by getting top-position of target-element and set it as scroll target
@@ -11,7 +13,6 @@ $(document).ready(function() {
 						location.hash = target; //attach the hash (#jumptarget) to the pageurl
 				});
 
-                $('.navbar-toggler').click();
 				return false;
 		});
 });
@@ -19,12 +20,8 @@ $(document).ready(function() {
 $(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop();
 
-		// Show/hide menu on scroll
-		//if (scrollDistance >= 850) {
-		//		$('nav').fadeIn("fast");
-		//} else {
-		//		$('nav').fadeOut("fast");
-		//}
+		// Hide menu on scroll
+		$(".navbar-collapse").removeClass('show');
 	
 		// Assign active class to nav links while scolling
 		$('.page-anchor').each(function(i) {

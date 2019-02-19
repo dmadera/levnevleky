@@ -8562,7 +8562,7 @@ a[target=_blank]:after {
 }
 
 body {
-  min-width: 200px;
+  min-width: 320px;
   font-family: Arial, sans-serif;
   background: #f4f7f6;
   font-size: 0.88rem;
@@ -8651,30 +8651,31 @@ h3 {
     margin-left: 30px !important;
   }
 }
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .navbar.top .logo {
-    margin-top: 60px !important;
+@media screen and (max-width: 992px) {
+  .welcome {
+    padding-top: 100px;
   }
 }
-.welcome .site-wrapper {
-  display: table;
-  width: 100vw;
-  height: 100vh;
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar.top .logo {
+    margin-top: 40px !important;
+  }
+}
+.welcome {
+  height: 100%;
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
   background: url("../img/intro.jpg") no-repeat center center;
   background-size: cover;
+  padding-bottom: 10px;
 }
-.welcome .site-wrapper-inner {
-  display: table-cell;
-  vertical-align: bottom;
-}
-.welcome .site-wrapper-inner-bottom {
-  display: table-cell;
-  vertical-align: bottom;
-}
-@media screen and (max-width: 991px) {
-  .welcome .inner {
-    padding-top: 100px;
+@media screen and (min-width: 991px) {
+  .welcome {
+    height: 100vh;
+  }
+  .welcome .pull-bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
   }
 }
 .welcome .card {
@@ -8853,14 +8854,13 @@ h3 {
   width: 100%;
   margin: 0 auto;
   background: url("../img/skimap.jpg") no-repeat center center;
-  background-size: stretch;
+  background-size: contain;
 }
 @media screen and (max-width: 992px) {
   .skimap .map {
-    background-size: contain;
     background: url("../img/skimap_sm.jpg") no-repeat center center;
-    width: 100%;
-    height: 623px;
+    background-size: contain;
+    height: 500px;
   }
 }
 
@@ -8878,6 +8878,7 @@ h3 {
 }
 .prices table td:nth-child(n+2) {
   text-align: right;
+  width: 130px;
 }
 .prices table td:not(.no-unit):nth-child(n+2):after {
   content: " Kč";
@@ -8924,6 +8925,38 @@ footer div.fcontainer {
 footer div.fcontainer .cards i {
   font-size: 50px;
   margin-right: 10px;
+}
+footer .quick-icons {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin: 0px auto;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+footer .quick-icons li {
+  display: inline-block;
+  text-align: center;
+}
+footer .quick-icons li a {
+  display: block;
+  padding: 13px;
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  width: 52px;
+  height: 52px;
+}
+footer .quick-icons li a img {
+  width: 26px;
+}
+footer .quick-icons li a:hover {
+  padding: 10px;
+}
+footer .quick-icons li a:hover img {
+  width: 32px;
+}
+footer .quick-icons li:last-child a {
+  border-right: 0;
 }
 footer .partners img {
   width: 130px;

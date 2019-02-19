@@ -1,4 +1,9 @@
 <?php
+if($_POST['token'] != $_SESSION['token']) {
+  header('Location: https://skiareal-krkonose.cz');    
+  exit();
+}
+
 header('Content-Type: application/json');
 require('class.mailer.php');
 
@@ -26,13 +31,14 @@ try {
     }
 
     $mail = new MyPHPMailer(true);
-    $mail->addAddress('info@levnevleky.cz');
+    $mail->addAddress('info@skiareal-krkonose.cz');
+    $mail->addCC($email, $name);
     $mail->addReplyTo($email, $name);
     $mail->setSubject($subject);
     $htmlmsg = nl2br($message);
     $body =
 <<<HTML
-    Byla vytvořena zpráva z webu levnevleky.cz<br/>
+    Byla vytvořena zpráva z webu skiareal-krkonose.cz<br/>
     od <b>$name</b> (email: $email)<br/><br/>
     Text zprávy:<br/><b>$htmlmsg</b>"
 HTML;

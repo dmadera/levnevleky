@@ -1,0 +1,1 @@
+rsync -aruz ./ -e 'ssh -p 9108' user@ssh.pemalbc.savana-hosting.cz:/www/skiareal-krkonose.cz/ --progress --delete  --exclude="img/gallery/thumb" --exclude=".git/" --exclude="img/gallery/logs/" --exclude="deploy-prod" --exclude="deploy-dev" --exclude="develop"

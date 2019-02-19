@@ -1,6 +1,4 @@
-$(document).ready(function() {
-  //showMessage('signup-success', null);
-});
+$(document).ready(function() {});
 
 function showMessage(type, details) {
   var modal = $('#modal-info');
@@ -17,15 +15,12 @@ function showMessage(type, details) {
       setModalData(modal, "Chyba odeslání zprávy", `
         Zprávu se nepodařilo odeslat.
         Zkotrolujte, zda máte správně vyplněný formulář z zkuste to znovu.<br>
-        V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@levnevleky.cz.<br>
+        V případě dalšího selhání nás kontaktujte, prosím, přímo na emailu - info@skiareal-krkonose.cz.<br>
         Děkujeme.<br>
         <br>
         Detail chyby: ` + JSON.stringify(details) + `
       `);
       break;
-      
-    default:
-      setModalData(modal, "Zpráva", `Ahoj tanečníku!`);
   }
   modal.modal('show');
 }

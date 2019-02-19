@@ -1,4 +1,9 @@
 <?php
+if($_POST['token'] != $_SESSION['token']) {
+  header('Location: https://skiareal-krkonose.cz');
+  exit();  
+}
+
 header('Content-Type: application/json');
 
 function get_data($url) {
