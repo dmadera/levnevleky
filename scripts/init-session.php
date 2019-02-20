@@ -1,9 +1,9 @@
 <?php
-	if(!is_file("config.ini")) {
+	if(!is_file("scripts/config.ini")) {
 		die('No config.ini file found!');
 	}
 
-	$config = parse_ini_file("config.ini", true);
+	$config = parse_ini_file("scripts/config.ini", true);
 	$apikey = $config['map']['apikey'];
 
   //session_start();
