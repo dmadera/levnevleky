@@ -99,7 +99,7 @@
                     <td class="icon">
                       <img src="img/layout/red-slope.svg" />
                     </td>
-                    <td>Slunečná stáň</td>
+                    <td>Slunečná stráň</td>
                     <td>550m</td>
                     <td class="status" title=""></td>
                   </tr>
@@ -136,9 +136,17 @@
                     <td class="icon">
                       <img src="img/layout/snowflake.svg" />
                     </td>
-                    <td>Sníh</td>
+                    <td>Výška sněhu</td>
                     <td colspan="2" class="text-right">
                       <span id="snowheight"></span>
+                    </td>
+                  </tr>
+                  <tr class="snow">
+                    <td class="icon">
+                      <img src="img/layout/snowflake.svg" />
+                    </td>
+                    <td>Typ sněhu</td>
+                    <td colspan="2" class="text-right">
                       <span id="snowtype"></span>
                     </td>
                   </tr>

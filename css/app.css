@@ -8706,13 +8706,15 @@ h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .welcome .areal {
-  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
   padding: 0;
   margin: 0;
 }
 .welcome .areal td {
+  overflow: hidden;
   word-wrap: break-word;
-  padding: 8px;
+  padding: 8px 5px;
   width: 100%;
   white-space: nowrap;
   border-bottom: 1px solid #D3D3D3;
@@ -8739,7 +8741,7 @@ h3 {
   border-top: 0;
 }
 .welcome .areal .icon {
-  padding: 5px 10px;
+  padding: 5px 7px;
   height: 40px;
   width: 40px;
 }
