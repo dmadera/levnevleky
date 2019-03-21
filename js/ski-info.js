@@ -49,6 +49,11 @@ function updateSkiInfo(data) {
 
 	// slopes
 	var slopes = 'loc_slopes' in data ? data.loc_slopes.slope : []; 
+  // snowpark is not registered on holiday info
+  var tmp = Object.assign({}, slopes[0]);
+  tmp.name = 'snowpark';
+  slopes.push(tmp);
+
 	slopes.forEach(function(slope) {
 		updateSlopeInfo(slope.name, slope.status_code);
 	});

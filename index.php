@@ -140,7 +140,7 @@
                     </td>
                     <td>Snowpark</td>
                     <td>300m</td>
-                    <td class="status open" title=""></td>
+                    <td class="status" title=""></td>
                   </tr>
                   <tr>
                     <th colspan="4">Aktuální stav</th>
