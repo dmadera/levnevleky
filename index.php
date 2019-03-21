@@ -12,6 +12,9 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
     <?php
       require_once('scripts/init-session.php');
+      function isDevSite() {
+      	return strpos($_SERVER['SERVER_NAME'], 'new.skiareal-krkonose.cz') === false;
+      }
     ?>
     <script type="text/javascript">
       window.localStorage.setItem('token', '<?php echo $token; ?>');
@@ -67,6 +70,26 @@
       </nav>
     </header>
     <main role="main">
+		<div class="modal main_modal" tabindex="-1" role="dialog" <?php echo 'data-enabled="'.$main_modal['show'].'"'; ?>>
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title"><?php echo isset($main_modal['header']) ? $main_modal['header'] : ""; ?></h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <p>
+		        	<?php echo isset($main_modal['body']) ? $main_modal['body'] : ""; ?>
+		        </p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
       <section class="welcome">
         <div class="container-fluid">
           <div class="row pull-bottom">
@@ -754,6 +777,8 @@
     <script src="js/gallery.js"></script>
     <script src="js/contact-form.js"></script>
     <script src="js/message.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikey; ?>&callback=initMap" async defer></script>
+    <?php if (isDevSite()): ?>
+    	<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikey; ?>&callback=initMap" async defer></script>
+	<?php endif; ?>	
   </body>
 </html>

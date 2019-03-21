@@ -1,4 +1,9 @@
-$(document).ready(function() {});
+$(document).ready(function() {
+  var mainModal = $('.main_modal');
+  if(mainModal.attr('data-enabled') == '1') {
+    mainModal.modal('show');
+  }
+});
 
 function showMessage(type, details) {
   var modal = $('#modal-info');
