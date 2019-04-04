@@ -8605,7 +8605,7 @@ h3 {
   display: block;
   width: 100%;
   margin-top: 10px;
-  padding: 20px 10px 20px 30px;
+  padding: 22px 10px 10px 20px;
   text-transform: uppercase;
   font-size: 2em;
   font-family: "Oswald", sans-serif;
@@ -8848,7 +8848,7 @@ h3 {
   display: block;
 }
 .webcams .thumbnails .webcam {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .skimap .map {
