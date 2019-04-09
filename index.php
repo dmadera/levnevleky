@@ -303,8 +303,8 @@
               <tbody>
                 <tr>
                   <th>Denní jízdné</th>
-                  <th>Dospělí</th>
-                  <th>Děti do 12let</th>
+                  <th class="text-right">Dospělí</th>
+                  <th class="text-right">Děti do 12let</th>
                 </tr>
                 <tr>
                   <td>Celodenní</td>
@@ -367,8 +367,8 @@
               <tbody>
                 <tr>
                   <th>Vícedenní jízdné</th>
-                  <th>Dospělí</th>
-                  <th>Děti do 12let</th>
+                  <th class="text-right">Dospělí</th>
+                  <th class="text-right">Děti do 12let</th>
                 </tr>
                 <tr>
                   <td>2 denní</td>
@@ -451,6 +451,12 @@
                   <td colspan="2">Bodová nebo hodinová jízdenka platí po celou lyžařskou sezónu.</td>
                 </tr>
                 <tr>
+                  <td colspan="2">Skipas je u nás přenosný, například pro rodiče hlídající děti apod.</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Na platnou kartu ISIC je 20% sleva při zakoupení celodenního skipasu.</td>
+                </tr>
+                <tr>
                   <td colspan="2" class="cards">
                     <span class="float-left">
                       Příjímáme platební karty.
@@ -475,7 +481,7 @@
             <table class="table table-bordered table-hover">
               <tbody>
                 <tr>
-                  <th>Doba půjčení</th><th class="w-25">Cena za komplet</th>
+                  <th>Doba půjčení</th><th class="w-25 text-right">Cena za komplet</th>
                 </tr>
                 <tr>
                   <td>Dopoledne od 09:00 do 12:30</td><td>280</td>
@@ -490,7 +496,7 @@
                   <td>Vícedenní (cena za 1 den)</td><td>300</td>
                 </tr>
                 <tr>
-                  <td>Půjčovné v rámci lyžařské školy (max 2h)</td><td>200</td>
+                  <td>Půjčovné v rámci lyžařské školy (max 2 hodiny)</td><td>200</td>
                 </tr>
                 <tr>
                   <th colspan="2">Doplňující informace</th>
@@ -505,7 +511,7 @@
                   <td colspan="2">Odpovědnost za nadměrné opotřebení, poškození či zrátu nese nájemce.</td>
                 </tr>
                 <tr>
-                  <td colspan="2">Helma k půjčenému setu je zdarma.</td>
+                  <td colspan="2">Helma a brýle k půjčenému setu je ZDARMA.</td>
                 </tr>
                 <tr>
                   <th colspan="2">Kontakt</th>
@@ -547,8 +553,8 @@
                     <tbody>
                       <tr>
                         <th>Osoby</th>
-                        <th>Doba výuky</th>
-                        <th>Cena</th>
+                        <th class="text-right">Doba výuky</th>
+                        <th class="text-right">Cena</th>
                       </tr>
                       <tr>
                         <td>Děti (výuka + skipas)</td>
@@ -567,7 +573,7 @@
                       </tr>
                       <tr>
                         <td>Vícehodinová výuka</td>
-                        <td class="no-unit">minimálně 4 hodiny</td>
+                        <td class="no-unit">min 4 hodiny</td>
                         <td class="no-unit">sleva</td>
                       </tr>
                       <tr>
@@ -575,22 +581,17 @@
                       </tr>
                       <tr>
                         <td colspan="3">
-                          Od sezóny 2018/19 nová škola <b>Mountain Rangers</b> i s doprovodným programem pro děti.
+                          Lyžařskou školu zajišťuje organizace <b>Mountain Rangers</b> i s doprovodným programem pro děti.
                         </td>
                       </tr>
                       <tr>
                         <td colspan="3">
-                          Při zakoupení lyžařské školy - skipass ZDARMA.
+                          Při zakoupení lyžařské školy je skipass ZDARMA + sleva v půjčovně lyží a snowboardů.
                         </td>
                       </tr>
                       <tr>
                         <td colspan="3">
-                          Instruktoři jsou trvale přítomeni v areálu.
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="3">
-                          Jednou týdně škola pořádá závody pro děti.
+                          Lyžařská škola pořádá doprovodný program včetně lyžařských závodů.
                         </td>
                       </tr>
                       <tr>

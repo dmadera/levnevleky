@@ -29,7 +29,7 @@ main {
 }
 
 .page {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
 .page-anchor {
@@ -358,7 +358,7 @@ h3 {
     width: 100%;
     margin: 0 auto;
     background: url('../img/skimap.jpg') no-repeat center center;
-    background-size: contain;
+    background-size: cover;
 
     @media screen and (max-width: 992px) {
       background: url('../img/skimap_sm.jpg') no-repeat center center;
@@ -393,10 +393,15 @@ h3 {
     }
   }
 
-  .cards img {
-    float: left;
-    width: 40px;
-    margin-left: 20px;
+  .cards {
+    padding: 11px 11px 9px 11px;
+    height: 46px;
+
+    img {
+      float: left;
+      width: 30px;
+      margin-left: 20px;
+    }
   }
 }
 
