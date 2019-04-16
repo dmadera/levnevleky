@@ -8758,7 +8758,7 @@ h3 {
   background-size: 28px;
   background-repeat: no-repeat;
   background-position: 85% center;
-  min-width: 28px;
+  min-width: 50px;
 }
 .welcome .areal .status.open {
   background-image: url("../img/layout/open.svg");
@@ -8767,10 +8767,10 @@ h3 {
   background-image: url("../img/layout/closed.svg");
 }
 .welcome .areal #snowheight::after {
-  content: "cm";
+  content: " cm";
 }
 .welcome .areal #temperature::after {
-  content: "°C";
+  content: " °C";
 }
 .welcome .areal #lastchange {
   padding: 3px 5px;

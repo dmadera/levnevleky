@@ -114,17 +114,22 @@ function updateSlopeInfo(slope_name, status) {
 }
 
 function updateWeatherInfo(data) {
-	$('#temperature').text(data.hasOwnProperty('temp_0700') ? data.temp_0700 : '--');
-	$('#weathertext').text('weather_0700_text' in data ? data.weather_0700_text : '');
 
-	var snowheight = '--';
-	if('snowheight_slopes_max' in data && 'snowheight_slopes_min' in data) {
+	$('#temperature').text('temp_0700' in data && $.isNumeric(data.temp_0700) ? data.temp_0700 : "-");
+	$('#weathertext').text('weather_0700_text' in data && data.weather_0700_code != 1 ? data.weather_0700_text : "");
+
+  if(!$.isNumeric(data.temp_0700)) {
+    $('.areal .temperature').hide();
+  }
+
+	var snowheight = '0';
+	if('snowheight_slopes_max' in data && 'snowheight_slopes_min' in data && $.isNumeric(data.snowheight_slopes_min) && $.isNumeric(data.snowheight_slopes_max)) {
 		snowheight = data.snowheight_slopes_min + '-' + data.snowheight_slopes_max;
-	} else if('snowheight_slopes' in data) {
+	} else if('snowheight_slopes' in data && $.isNumeric(data.snowheight_slopes)) {
 		snowheight = data.snowheight_slopes;
 	}
 	$('#snowheight').text(snowheight);
-	$('#snowtype').text('snowtype_text' in data ? data.snowtype_text : '');
+	$('#snowtype').text('snowtype_text' in data && data.snowtype_code != 1 ? data.snowtype_text : 'žádný');
 
 	var regex = /([0-9]{4})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})/;
 	var f = data['@attributes'].lastchange.match(regex);
