@@ -247,7 +247,7 @@
                 V areálu jsou k dispozici 2 vleky o délkách 500 m a 300 m s obtížností sjezdovek střední a lehká. Tým areálu za pomoci nejmodernější profesionální techniky a umělého zasněžování (záruka sněhu po celou zimní sezónu) se postará o ideální podmínky pro lyžování v průběhu celé lyžařské sezóny. Penzion Liberecká Bouda, která se nachází u horní stanice vleku poskytuje ubytovací, wellness a restaurační služby včetně venkovního Skibaru. Liberecká bouda je vybavena wellness částí sloužící i pro veřejnost. (bazén 10x5, vířivka a sauna).  
               </p>
               <p>
-                Bezplatné parkoviště je u nás zcela zdarma pouhých pár desítek metrů od spodní stanice lyžařského vleku. Od sezóny 2018/19 Výuku lyžování a snowboardingu u nás zajišťuje profesionální lyžařská škola Mountain Rangers, která se kvalifikovaně postará o začínající i zkušenější lyžaře. Pro Vás i Vaše ratolesti pořádá škola nejen výuku, ale i doprovodný program včetně lyžařských závodů.
+                Parkoviště je u nás zcela ZDARMA pouhých pár desítek metrů od spodní stanice lyžařského vleku. Od sezóny 2018/19 Výuku lyžování a snowboardingu u nás zajišťuje profesionální lyžařská škola Mountain Rangers, která se kvalifikovaně postará o začínající i zkušenější lyžaře. Pro Vás i Vaše ratolesti pořádá škola nejen výuku, ale i doprovodný program včetně lyžařských závodů.
               </p>
               <p>
                 Pokud přijedete bez lyží, vybavíme Vás kompletně v naší půjčovně lyží a snowboardů. K zapůjčených lyžařským či snowboard kompletům zapůjčíme zdarma helmu či brýle.
