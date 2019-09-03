@@ -1,15 +1,15 @@
 [smtp]
 host = smtp.savana.cz
-user = web@b-soul.cz
-password = password
+user = web@skiareal-krkonose.cz
+password = xxxxxxxxxxx
 
 [email]
-name = B-SOUL Taneční škola
-from = web@b-soul.cz
+name = Skiareál Luisino údolí
+from = web@skiareal-krkonose.cz
 
 [holidayinfo]
 url = http://exports.holidayinfo.cz/xml_export.php
-params[dc] = 1234567889990
+params[dc] = xxxxxxxxxxxxxxxx
 
 [map]
-apikey = AIzaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAasdsa
+apikey = AIxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
