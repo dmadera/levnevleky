@@ -22,9 +22,7 @@ Session.vim
 tags
 
 scripts/config.ini
+scripts/notification-data.json
 
 img/gallery/thumb/
 img/gallery/logs/
-
-deploy-dev
-develop
