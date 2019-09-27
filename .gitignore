@@ -1,25 +1,4 @@
-.idea/
-dist/
-node_modules/
-tests/__coverage__/
-package-lock.json
 .sass-cache/
-
-
-# Swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-v][a-z]
-[._]sw[a-p]
-
-# Session
-Session.vim
-
-# Temporary
-.netrwhist
-*~
-# Auto-generated tag files
-tags
 
 scripts/config.ini
 scripts/notification-data.json
