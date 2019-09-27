@@ -1,0 +1,5 @@
+.git/
+img/gallery/thumb
+img/gallery/logs/
+deploy-prod
+exclude
