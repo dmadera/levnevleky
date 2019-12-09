@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="cs">
   <head>
     <meta charset="utf-8">
     <title>SKI AREÁL Luision údolí Krkonoše</title>
@@ -13,11 +13,13 @@
     <?php
       require_once('scripts/init-session.php');
       function isDevSite() {
-      	return strpos($_SERVER['SERVER_NAME'], 'new.skiareal-krkonose.cz') === false;
+      	return strpos($_SERVER['SERVER_NAME'], 'new.skiareal-krkonose.cz') !== false;
       }
     ?>
     <script type="text/javascript">
       window.localStorage.setItem('token', '<?php echo $token; ?>');
+      window.localStorage.setItem('api-captcha-client',
+        '<?php echo $apikeys['captcha-client']; ?>');
     </script>
   </head>
   <body>
@@ -31,7 +33,7 @@
           </h2>
         </a>
         <button class="navbar-toggler navbar-toggler-right"
-        type="button" 
+        type="button"
         data-toggle="collapse"
         data-target="#navbar"
         aria-controls="navbar"
@@ -244,7 +246,7 @@
             <h3>Areál</h3>
             <div class="col-12 col-lg-6">
               <p>
-                V areálu jsou k dispozici 2 vleky o délkách 500 m a 300 m s obtížností sjezdovek střední a lehká. Tým areálu za pomoci nejmodernější profesionální techniky a umělého zasněžování (záruka sněhu po celou zimní sezónu) se postará o ideální podmínky pro lyžování v průběhu celé lyžařské sezóny. Penzion Liberecká Bouda, která se nachází u horní stanice vleku poskytuje ubytovací, wellness a restaurační služby včetně venkovního Skibaru. Liberecká bouda je vybavena wellness částí sloužící i pro veřejnost. (bazén 10x5, vířivka a sauna).  
+                V areálu jsou k dispozici 2 vleky o délkách 500 m a 300 m s obtížností sjezdovek střední a lehká. Tým areálu za pomoci nejmodernější profesionální techniky a umělého zasněžování (záruka sněhu po celou zimní sezónu) se postará o ideální podmínky pro lyžování v průběhu celé lyžařské sezóny. Penzion Liberecká Bouda, která se nachází u horní stanice vleku poskytuje ubytovací, wellness a restaurační služby včetně venkovního Skibaru. Liberecká bouda je vybavena wellness částí sloužící i pro veřejnost. (bazén 10x5, vířivka a sauna).
               </p>
               <p>
                 Parkoviště je u nás zcela ZDARMA pouhých pár desítek metrů od spodní stanice lyžařského vleku. Od sezóny 2018/19 Výuku lyžování a snowboardingu u nás zajišťuje profesionální lyžařská škola Mountain Rangers, která se kvalifikovaně postará o začínající i zkušenější lyžaře. Pro Vás i Vaše ratolesti pořádá škola nejen výuku, ale i doprovodný program včetně lyžařských závodů.
@@ -784,8 +786,9 @@
     <script src="js/gallery.js"></script>
     <script src="js/contact-form.js"></script>
     <script src="js/message.js"></script>
-    <?php if (isDevSite()): ?>
-    	<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikey; ?>&callback=initMap" async defer></script>
-	<?php endif; ?>	
+    <?php if (!isDevSite()): ?>
+    	<script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikeys["map"]; ?>&callback=initMap" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js?render=<?php echo $apikeys["captcha-client"]; ?>" async defer></script>
+	<?php endif; ?>
   </body>
 </html>

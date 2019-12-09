@@ -1,7 +1,7 @@
 [smtp]
 host = smtp.savana.cz
 user = web@skiareal-krkonose.cz
-password = xxxxxxxxxxx
+password = xxxxxxxxxxxxxx
 
 [email]
 name = Skiareál Luisino údolí
@@ -9,7 +9,9 @@ from = web@skiareal-krkonose.cz
 
 [holidayinfo]
 url = http://exports.holidayinfo.cz/xml_export.php
-params[dc] = xxxxxxxxxxxxxxxx
+params[dc] = xxxxxxxxxxxxxxx
 
-[map]
-apikey = AIxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+[apikeys]
+map = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+captcha-client = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+captcha-server = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

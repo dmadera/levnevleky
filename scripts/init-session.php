@@ -4,7 +4,7 @@
 	}
 
 	$config = parse_ini_file("scripts/config.ini", true);
-	$apikey = $config['map']['apikey'];
+	$apikeys = $config['apikeys'];
 
 	$json = file_get_contents('scripts/notification-data.json');
 	$json_data = json_decode($json, true);
