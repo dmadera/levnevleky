@@ -310,56 +310,61 @@
                 </tr>
                 <tr>
                   <td>Celodenní</td>
-                  <td>430</td>
-                  <td>330</td>
+                  <td>460</td>
+                  <td>350</td>
+                </tr>
+		<tr>
+                  <td>Dopolední 9:00-13:00</td>
+                  <td>360</td>
+                  <td>280</td>
                 </tr>
                 <tr>
                   <td>Od 12:00</td>
-                  <td>340</td>
-                  <td>260</td>
+                  <td>360</td>
+                  <td>280</td>
                 </tr>
                 <tr>
                   <td>Od 13:00</td>
-                  <td>320</td>
+                  <td>340</td>
                   <td>260</td>
                 </tr>
                 <tr>
                   <td>Od 14:00</td>
-                  <td>300</td>
+                  <td>320</td>
                   <td>240</td>
                 </tr>
                 <tr>
                   <td>1 hodina</td>
-                  <td>260</td>
-                  <td>200</td>
+                  <td>280</td>
+                  <td>220</td>
                 </tr>
                 <tr>
                   <td>2 hodina</td>
-                  <td>300</td>
-                  <td>230</td>
+                  <td>320</td>
+                  <td>250</td>
                 </tr>
                 <tr>
                   <td>3 hodina</td>
-                  <td>340</td>
-                  <td>260</td>
+                  <td>360</td>
+                  <td>280</td>
                 </tr>
                 <tr>
                   <th colspan="3">Rodinná nabídka</th>
                 </tr>
                 <tr>
-                  <td colspan="2">Rodinná 2 dospělí + 1 dítě (1. dítě 190,-)</td>
-                  <td>1050</td>
+                  <td colspan="2">Rodinná 2 dospělí + 1 dítě (1. dítě 200,-)</td>
+                  <td>1120</td>
                 </tr>
                 <tr>
-                  <td colspan="2">Rodinná 2 dospělí + 2 děti (2. dítě 140,-)</td>
-                  <td>1190</td>
+                  <td colspan="2">Rodinná 2 dospělí + 2 děti (2. dítě 150,-)</td>
+                  <td>1270</td>
                 </tr>
                 <tr>
                   <th colspan="3">Školní skupiny</th>
                 </tr>
                 <tr>
                   <td colspan="2">Školní skupiny (10 a více žáků) doprovod ZDARMA</td>
-                  <td>320</td>
+                  <td>350</td>
                 </tr>
               </tbody>
             </table>
@@ -374,33 +379,33 @@
                 </tr>
                 <tr>
                   <td>2 denní</td>
-                  <td>800</td>
-                  <td>620</td>
+                  <td>860</td>
+                  <td>660</td>
                 </tr>
                 <tr>
                   <td>3 denní</td>
-                  <td>1170</td>
-                  <td>900</td>
+                  <td>1260</td>
+                  <td>960</td>
                 </tr>
                 <tr>
                   <td>4 denní</td>
-                  <td>1520</td>
-                  <td>1160</td>
+                  <td>1640</td>
+                  <td>1240</td>
                 </tr>
                 <tr>
                   <td>5 denní</td>
-                  <td>1850</td>
-                  <td>1400</td>
+                  <td>2000</td>
+                  <td>1500</td>
                 </tr>
                 <tr>
                   <td>6 denní</td>
-                  <td>2160</td>
-                  <td>1620</td>
+                  <td>2340</td>
+                  <td>1740</td>
                 </tr>
                 <tr>
                   <td>7 denní</td>
-                  <td>2450</td>
-                  <td>1820</td>
+                  <td>2660</td>
+                  <td>1960</td>
                 </tr>
                 <tr>
                   <th>Bodové jízdné</th>
@@ -426,7 +431,7 @@
                 </tr>
                 <tr>
                   <td>KOTVA 500m</td>
-                  <td class="no-unit" colspan="2">40 bodů</td>
+                  <td class="no-unit" colspan="2">50 bodů</td>
                 </tr>
               </tbody>
             </table>
