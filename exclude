@@ -4,3 +4,7 @@ img/gallery/logs/
 deploy-prod
 *.swp
 exclude
+scripts/config.ini.sample
+scripts/config.ini
+scripts/notification-data.json.sample
+scripts/notification-data.json
