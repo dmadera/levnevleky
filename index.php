@@ -407,61 +407,61 @@
                                 </tr>
                                 <tr>
                                     <td>Celodenní</td>
-                                    <td>460</td>
-                                    <td>350</td>
+                                    <td>490</td>
+                                    <td>380</td>
                                 </tr>
                                 <tr>
                                     <td>Dopolední 9:00-13:00</td>
-                                    <td>360</td>
-                                    <td>280</td>
+                                    <td>390</td>
+                                    <td>300</td>
                                 </tr>
                                 <tr>
                                     <td>Od 12:00</td>
-                                    <td>360</td>
-                                    <td>280</td>
+                                    <td>420</td>
+                                    <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>Od 13:00</td>
-                                    <td>340</td>
-                                    <td>260</td>
+                                    <td>390</td>
+                                    <td>300</td>
                                 </tr>
                                 <tr>
                                     <td>Od 14:00</td>
-                                    <td>320</td>
-                                    <td>240</td>
+                                    <td>360</td>
+                                    <td>280</td>
                                 </tr>
                                 <tr>
                                     <td>1 hodina</td>
-                                    <td>280</td>
-                                    <td>220</td>
+                                    <td>310</td>
+                                    <td>240</td>
                                 </tr>
                                 <tr>
                                     <td>2 hodina</td>
-                                    <td>320</td>
-                                    <td>250</td>
+                                    <td>350</td>
+                                    <td>270</td>
                                 </tr>
                                 <tr>
                                     <td>3 hodina</td>
-                                    <td>360</td>
-                                    <td>280</td>
+                                    <td>390</td>
+                                    <td>300</td>
                                 </tr>
                                 <tr>
                                     <th colspan="3">Rodinná nabídka</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Rodinná 2 dospělí + 1 dítě (1. dítě 200,-)</td>
-                                    <td>1120</td>
+                                    <td colspan="2">Rodinná 2 dospělí + 1 dítě (1. dítě 250,-)</td>
+                                    <td>1230</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Rodinná 2 dospělí + 2 děti (2. dítě 150,-)</td>
-                                    <td>1270</td>
+                                    <td colspan="2">Rodinná 2 dospělí + 2 děti (2. dítě 200,-)</td>
+                                    <td>1430</td>
                                 </tr>
                                 <tr>
                                     <th colspan="3">Školní skupiny</th>
                                 </tr>
                                 <tr>
                                     <td colspan="2">Školní skupiny (10 a více žáků) doprovod ZDARMA</td>
-                                    <td>350</td>
+                                    <td>390</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -476,33 +476,33 @@
                                 </tr>
                                 <tr>
                                     <td>2 denní</td>
-                                    <td>860</td>
-                                    <td>660</td>
+                                    <td>920</td>
+                                    <td>720</td>
                                 </tr>
                                 <tr>
                                     <td>3 denní</td>
-                                    <td>1260</td>
-                                    <td>960</td>
+                                    <td>1350</td>
+                                    <td>1050</td>
                                 </tr>
                                 <tr>
                                     <td>4 denní</td>
-                                    <td>1640</td>
-                                    <td>1240</td>
+                                    <td>1760</td>
+                                    <td>1360</td>
                                 </tr>
                                 <tr>
                                     <td>5 denní</td>
-                                    <td>2000</td>
-                                    <td>1500</td>
+                                    <td>2150</td>
+                                    <td>1650</td>
                                 </tr>
                                 <tr>
                                     <td>6 denní</td>
-                                    <td>2340</td>
-                                    <td>1740</td>
+                                    <td>2520</td>
+                                    <td>1920</td>
                                 </tr>
                                 <tr>
                                     <td>7 denní</td>
-                                    <td>2660</td>
-                                    <td>1960</td>
+                                    <td>2870</td>
+                                    <td>2170</td>
                                 </tr>
                                 <tr>
                                     <th>Bodové jízdné</th>
@@ -602,15 +602,15 @@
                                 </tr>
                                 <tr>
                                     <td>Dopoledne od 09:00 do 12:30</td>
-                                    <td>280</td>
+                                    <td>300</td>
                                 </tr>
                                 <tr>
                                     <td>Odpoledne od 12:30 do 16:00</td>
-                                    <td>280</td>
+                                    <td>300</td>
                                 </tr>
                                 <tr>
                                     <td>Celodenní</td>
-                                    <td>340</td>
+                                    <td>370</td>
                                 </tr>
                                 <tr>
                                     <td>Vícedenní (cena za 1 den)</td>
