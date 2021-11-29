@@ -689,12 +689,12 @@
                                         <tr>
                                             <td>Děti (výuka + skipas)</td>
                                             <td class="no-unit">1 hodina</td>
-                                            <td>460,-</td>
+                                            <td>490</td>
                                         </tr>
                                         <tr>
                                             <td>Dospělí (výuka + skipas)</td>
                                             <td class="no-unit">1 hodina</td>
-                                            <td>560,-</td>
+                                            <td>390</td>
                                         </tr>
                                         <tr>
                                             <td>Skupinová výuka</td>
@@ -703,7 +703,7 @@
                                         </tr>
                                         <tr>
                                             <td>Vícehodinová výuka</td>
-                                            <td class="no-unit">min 4 hodiny</td>
+                                            <td class="no-unit">min 2 hodiny</td>
                                             <td class="no-unit">sleva</td>
                                         </tr>
                                         <tr>
