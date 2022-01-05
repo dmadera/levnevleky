@@ -740,7 +740,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="3">(+420) 777 448 455</td>
+                                            <td colspan="3">(+420) 705 950 116</td>
                                         </tr>
                                     </tbody>
                                 </table>
