@@ -835,7 +835,7 @@
                         <a href="http://www.skiareal-krkonose.cz">www.skiareal-krkonose.cz</a>
                     </li>
                     <li>Areál: (+420) 722 901 501</li>
-                    <li>Lyžařská škola: (+420) 777 448 455</li>
+                    <li>Lyžařská škola: (+420) 705 950 116</li>
                     <li>Půjčovna: (+420) 722 901 501</li>
                 </ul>
                 <div class="text-center text-lg-left">
