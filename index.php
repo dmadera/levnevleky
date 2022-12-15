@@ -6,19 +6,12 @@
     <title>SKI Luisino údolí - Dolní Dvůr - Krkonoše</title>
     <meta name="description"
         content="SKI Luisino údolí je rekreační lyžařský areál rodinného typu nacházející se v obci Dolní Dvůr v srdci Krkonoš. K dispozici máme 2 lyžařské vleky, lyžařskou školu, půjčovnu vybavení, občerstvení u horní stanice vleku a parkoviště zdarma.">
-    <meta name="author"
-        content="Daniel Maděra">
-    <meta content="width=device-width, initial-scale=1"
-        name="viewport" />
-    <link rel="stylesheet"
-        href="css/app.css?v=1.0">
-    <link rel="stylesheet"
-        href="assets/dnk-gallery/css/jquery.donkeyGallery.packed.min.css">
-    <link rel="shortcut icon"
-        href="/favicon.png">
-    <link rel="shortcut icon"
-        href="favicon.png"
-        type="image/png">
+    <meta name="author" content="Daniel Maděra">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="css/app.css?v=1.0">
+    <link rel="stylesheet" href="assets/dnk-gallery/css/jquery.donkeyGallery.packed.min.css">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
     <?php
     require_once('scripts/init-session.php');
     function isDevSite()
@@ -35,87 +28,57 @@
 <body>
     <header id="home">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark top">
-            <a href="#home"
-                class="navbar-brand logo">
+            <a href="#home" class="navbar-brand logo">
                 <h1 class="text-hide">SKI Luisino údolí - Dolní Dvůr - Krkonoše</h1>
-                <img src="img/logo.svg"
-                    alt="SKI AREÁL Luisino údolí" />
+                <img src="img/logo.svg" alt="SKI AREÁL Luisino údolí" />
                 <h2 class="subtitle d-none d-lg-block">
                     Rodinné lyžování v srdci Krkonoš
                 </h2>
             </a>
-            <button class="navbar-toggler navbar-toggler-right"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbar"
-                aria-controls="navbar"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse"
-                id="navbar">
+            <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#areal"
-                            title="Lyžování">Lyžování</a>
+                        <a class="nav-link" href="#areal" title="Lyžování">Lyžování</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#webcams"
-                            title="Webkamery">Webkamery</a>
+                        <a class="nav-link" href="#webcams" title="Webkamery">Webkamery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#skimap"
-                            title="Lyžařská mapa">Skimapa</a>
+                        <a class="nav-link" href="#skimap" title="Lyžařská mapa">Skimapa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#prices"
-                            title="Ceník skipasů">Ceník</a>
+                        <a class="nav-link" href="#prices" title="Ceník skipasů">Ceník</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#rental"
-                            title="Půjčovna vybavení">Půjčovna</a>
+                        <a class="nav-link" href="#rental" title="Půjčovna vybavení">Půjčovna</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#school"
-                            title="Lyžařská škola">Škola</a>
+                        <a class="nav-link" href="#school" title="Lyžařská škola">Škola</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#map"
-                            title="Mapa">Kde nás najdete</a>
+                        <a class="nav-link" href="#map" title="Mapa">Kde nás najdete</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"
-                            href="#contact"
-                            title="Kontakt">Kontakt</a>
+                        <a class="nav-link" href="#contact" title="Kontakt">Kontakt</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main role="main">
-        <div class="modal main_modal"
-            tabindex="-1"
-            role="dialog"
+        <div class="modal main_modal" tabindex="-1" role="dialog"
             <?php echo 'data-enabled="' . $main_modal['show'] . '"'; ?>>
-            <div class="modal-dialog"
-                role="document">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">
                             <?php echo isset($main_modal['header']) ? $main_modal['header'] : ""; ?>
                         </h5>
-                        <button type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -125,9 +88,7 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button"
-                            class="btn btn-secondary"
-                            data-dismiss="modal">Zavřít</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zavřít</button>
                     </div>
                 </div>
             </div>
@@ -141,14 +102,18 @@
                                 <tr>
                                     <th colspan="4">Vleky</th>
                                 </tr>
+                                <tr>
+                                    <td colspan="4" class="px-2 text-center h5 text-light bg-dark font-weight-bold">
+                                        Předpokládané spuštění areálu je
+                                        26. 12. 2022</td>
+                                </tr>
                                 <tr class="kotva">
                                     <td class="icon grey-bg">
                                         <img src="img/layout/kotva.svg" />
                                     </td>
                                     <td>KOTVA</td>
                                     <td>500m</td>
-                                    <td class="status"
-                                        title=""></td>
+                                    <td class="status" title=""></td>
                                 </tr>
                                 <tr class="poma">
                                     <td class="icon grey-bg">
@@ -156,8 +121,7 @@
                                     </td>
                                     <td>POMA</td>
                                     <td>300m</td>
-                                    <td class="status"
-                                        title=""></td>
+                                    <td class="status" title=""></td>
                                 </tr>
                                 <tr>
                                     <th colspan="4">Sjezovky</th>
@@ -168,8 +132,7 @@
                                     </td>
                                     <td>Slunečná stráň</td>
                                     <td>550m</td>
-                                    <td class="status"
-                                        title=""></td>
+                                    <td class="status" title=""></td>
                                 </tr>
                                 <tr class="slunecnastranii-upomy d-none">
                                     <td class="icon">
@@ -177,8 +140,7 @@
                                     </td>
                                     <td>Slunečná stráň</td>
                                     <td>550m</td>
-                                    <td class="status"
-                                        title=""></td>
+                                    <td class="status" title=""></td>
                                 </tr>
                                 <tr class="vyhlidkovaulesa">
                                     <td class="icon">
@@ -186,8 +148,7 @@
                                     </td>
                                     <td>U lesa</td>
                                     <td>600m</td>
-                                    <td class="status"
-                                        title=""></td>
+                                    <td class="status" title=""></td>
                                 </tr>
                                 <tr class="snowpark-snowcross">
                                     <td class="icon">
@@ -195,8 +156,7 @@
                                     </td>
                                     <td>Snowpark</td>
                                     <td>300m</td>
-                                    <td class="status"
-                                        title=""></td>
+                                    <td class="status" title=""></td>
                                 </tr>
                                 <tr>
                                     <th colspan="4">Aktuální stav</th>
@@ -206,8 +166,7 @@
                                         <img src="img/layout/thermometer.svg" />
                                     </td>
                                     <td>Teplota</td>
-                                    <td colspan="2"
-                                        class="text-right">
+                                    <td colspan="2" class="text-right">
                                         <span id="temperature"></span>
                                         <span id="weathertext"></span>
                                     </td>
@@ -217,8 +176,7 @@
                                         <img src="img/layout/snowflake.svg" />
                                     </td>
                                     <td>Výška sněhu</td>
-                                    <td colspan="2"
-                                        class="text-right">
+                                    <td colspan="2" class="text-right">
                                         <span id="snowheight"></span>
                                     </td>
                                 </tr>
@@ -227,8 +185,7 @@
                                         <img src="img/layout/snowflake.svg" />
                                     </td>
                                     <td>Typ sněhu</td>
-                                    <td colspan="2"
-                                        class="text-right">
+                                    <td colspan="2" class="text-right">
                                         <span id="snowtype"></span>
                                     </td>
                                 </tr>
@@ -237,15 +194,13 @@
                                         <img src="img/layout/snowmaking.svg" />
                                     </td>
                                     <td>Zasněžujeme</td>
-                                    <td colspan="2"
-                                        class="text-right">
+                                    <td colspan="2" class="text-right">
                                         <span id="snowmaking"></span>
                                         <span></span>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4"
-                                        id="lastchange"></td>
+                                    <td colspan="4" id="lastchange"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -268,14 +223,12 @@
                                     </li>
                                     <li>
                                         <a href="#contact">
-                                            <img src="img/layout/email.svg"
-                                                title="Kontakt přes e-mail" />
+                                            <img src="img/layout/email.svg" title="Kontakt přes e-mail" />
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#webcams">
-                                            <img src="img/layout/webcam.svg"
-                                                title="Webkamery" />
+                                            <img src="img/layout/webcam.svg" title="Webkamery" />
                                         </a>
                                     </li>
                                 </ul>
@@ -286,13 +239,9 @@
                         <div class="weather-container-relative">
                             <div class="weather-card-container">
                                 <div class="card weather">
-                                    <a class="weatherwidget-io"
-                                        href="https://forecast7.com/cs/50d6615d62/strazne/"
-                                        data-label_1="LUISINO ÚDOLÍ"
-                                        data-label_2="Počasí"
-                                        data-font="Helvetica"
-                                        data-days="5"
-                                        data-theme="pure">
+                                    <a class="weatherwidget-io" href="https://forecast7.com/cs/50d6615d62/strazne/"
+                                        data-label_1="LUISINO ÚDOLÍ" data-label_2="Počasí" data-font="Helvetica"
+                                        data-days="5" data-theme="pure">
                                         LUISINO ÚDOLÍ Počasí
                                     </a>
                                 </div>
@@ -302,8 +251,7 @@
                 </div>
             </div>
         </section>
-        <a class="page-anchor"
-            id="areal">&nbsp;</a>
+        <a class="page-anchor" id="areal">&nbsp;</a>
         <section class="page areal">
             <div class="container">
                 <div class="row">
@@ -346,8 +294,7 @@
                 </div>
             </div>
         </section>
-        <a class="page-anchor"
-            id="webcams">&nbsp;</a>
+        <a class="page-anchor" id="webcams">&nbsp;</a>
         <section class="page webcams">
             <div class="container">
                 <div class="row">
@@ -355,28 +302,20 @@
                         <h3>Webkamery</h3>
                     </div>
                     <div class="col-12 col-md-9 d-none d-md-block">
-                        <a class="webcam-main"
-                            data-name="udoli"
-                            data-link="https://www.libereckabouda.cz/kamera/ip-camera-lb-<cam_name>.jpg"><img
+                        <a class="webcam-main" data-name="udoli"
+                            data-link="https://pemalbc.savana-hosting.cz/libereckabouda.cz/kamera/ip-camera-lb-<cam_name>.jpg"><img
                                 src="" /></a>
                     </div>
                     <div class="col-12 col-md-3 thumbnails">
-                        <a class="webcam"
-                            data-name="udoli"
-                            role="button"><img src="" /></a>
-                        <a class="webcam"
-                            data-name="skibar"
-                            role="button"><img src="" /></a>
-                        <a class="webcam"
-                            data-name="bouda"
-                            role="button"><img src="" /></a>
+                        <a class="webcam" data-name="udoli" role="button"><img src="" /></a>
+                        <a class="webcam" data-name="skibar" role="button"><img src="" /></a>
+                        <a class="webcam" data-name="bouda" role="button"><img src="" /></a>
                     </div>
                 </div>
             </div>
             </div>
         </section>
-        <a class="page-anchor"
-            id="skimap">&nbsp;</a>
+        <a class="page-anchor" id="skimap">&nbsp;</a>
         <section class="page skimap">
             <div class="container">
                 <div class="row">
@@ -389,8 +328,7 @@
                 </div>
             </div>
         </section>
-        <a class="page-anchor"
-            id="prices">&nbsp;</a>
+        <a class="page-anchor" id="prices">&nbsp;</a>
         <section class="page prices">
             <div class="container">
                 <div class="row">
@@ -403,65 +341,65 @@
                                 <tr>
                                     <th>Denní jízdné</th>
                                     <th class="text-right">Dospělí</th>
-                                    <th class="text-right">Děti do 12let</th>
+                                    <th class="text-right">Děti do 15 let</th>
                                 </tr>
                                 <tr>
                                     <td>Celodenní</td>
-                                    <td>490</td>
-                                    <td>380</td>
+                                    <td>540</td>
+                                    <td>420</td>
                                 </tr>
                                 <tr>
                                     <td>Dopolední 9:00-13:00</td>
-                                    <td>390</td>
-                                    <td>300</td>
+                                    <td>440</td>
+                                    <td>340</td>
                                 </tr>
                                 <tr>
                                     <td>Od 12:00</td>
+                                    <td>450</td>
+                                    <td>350</td>
+                                </tr>
+                                <tr>
+                                    <td>Od 13:00</td>
                                     <td>420</td>
                                     <td>320</td>
                                 </tr>
                                 <tr>
-                                    <td>Od 13:00</td>
-                                    <td>390</td>
-                                    <td>300</td>
-                                </tr>
-                                <tr>
                                     <td>Od 14:00</td>
-                                    <td>360</td>
-                                    <td>280</td>
+                                    <td>390</td>
+                                    <td>290</td>
                                 </tr>
                                 <tr>
                                     <td>1 hodina</td>
-                                    <td>310</td>
-                                    <td>240</td>
+                                    <td>360</td>
+                                    <td>260</td>
                                 </tr>
                                 <tr>
                                     <td>2 hodina</td>
-                                    <td>350</td>
-                                    <td>270</td>
+                                    <td>390</td>
+                                    <td>290</td>
                                 </tr>
                                 <tr>
                                     <td>3 hodina</td>
-                                    <td>390</td>
-                                    <td>300</td>
+                                    <td>420</td>
+                                    <td>320</td>
                                 </tr>
                                 <tr>
                                     <th colspan="3">Rodinná nabídka</th>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Rodinná 2 dospělí + 1 dítě (1. dítě 250,-)</td>
-                                    <td>1230</td>
+                                    <td colspan="2">Rodinná 2 dospělí + 1 dítě (1. dítě 300,-)</td>
+                                    <td>1380</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Rodinná 2 dospělí + 2 děti (2. dítě 200,-)</td>
-                                    <td>1430</td>
+                                    <td colspan="2">Rodinná 2 dospělí + 2 děti (2. dítě 250,-)</td>
+                                    <td>1580</td>
                                 </tr>
                                 <tr>
                                     <th colspan="3">Školní skupiny</th>
                                 </tr>
                                 <tr>
                                     <td colspan="2">Školní skupiny (10 a více žáků) doprovod ZDARMA</td>
-                                    <td>390</td>
+                                    <td>400</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -472,37 +410,37 @@
                                 <tr>
                                     <th>Vícedenní jízdné</th>
                                     <th class="text-right">Dospělí</th>
-                                    <th class="text-right">Děti do 12let</th>
+                                    <th class="text-right">Děti do 15 let</th>
                                 </tr>
                                 <tr>
                                     <td>2 denní</td>
-                                    <td>920</td>
-                                    <td>720</td>
+                                    <td>1000</td>
+                                    <td>780</td>
                                 </tr>
                                 <tr>
                                     <td>3 denní</td>
-                                    <td>1350</td>
-                                    <td>1050</td>
+                                    <td>1470</td>
+                                    <td>1140</td>
                                 </tr>
                                 <tr>
                                     <td>4 denní</td>
-                                    <td>1760</td>
-                                    <td>1360</td>
+                                    <td>1920</td>
+                                    <td>1480</td>
                                 </tr>
                                 <tr>
                                     <td>5 denní</td>
-                                    <td>2150</td>
-                                    <td>1650</td>
+                                    <td>2350</td>
+                                    <td>1800</td>
                                 </tr>
                                 <tr>
                                     <td>6 denní</td>
-                                    <td>2520</td>
-                                    <td>1920</td>
+                                    <td>2760</td>
+                                    <td>2100</td>
                                 </tr>
                                 <tr>
                                     <td>7 denní</td>
-                                    <td>2870</td>
-                                    <td>2170</td>
+                                    <td>3150</td>
+                                    <td>2380</td>
                                 </tr>
                                 <tr>
                                     <th>Bodové jízdné</th>
@@ -524,13 +462,11 @@
                                 </tr>
                                 <tr>
                                     <td>POMA 300m</td>
-                                    <td class="no-unit"
-                                        colspan="2">30 bodů</td>
+                                    <td class="no-unit" colspan="2">30 bodů</td>
                                 </tr>
                                 <tr>
                                     <td>KOTVA 500m</td>
-                                    <td class="no-unit"
-                                        colspan="2">50 bodů</td>
+                                    <td class="no-unit" colspan="2">50 bodů</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -545,11 +481,10 @@
                                     <td colspan="2">Provozní doba je od 9:00 - 16:00, v únoru do 16:30</td>
                                 </tr>
                                 <tr>
-                                    <td class=""
-                                        colspan="2">Vratná záloha na čipovou kartu je 50,- Kč.</td>
+                                    <td class="" colspan="2">Vratná záloha na čipovou kartu je 50,- Kč.</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">Děti se počítají do výšky 130cm nebo do 12-ti let.</td>
+                                    <td colspan="2"><strong>Děti se počítají do 15 let.</strong></td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">Čipová karta lze kdykoli dobíjet novými body - minimální
@@ -571,8 +506,7 @@
                                         skipasu.</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"
-                                        class="cards">
+                                    <td colspan="2" class="cards">
                                         <span class="float-left">
                                             Příjímáme platební karty.
                                         </span>
@@ -587,8 +521,7 @@
                 </div>
             </div>
         </section>
-        <a class="page-anchor"
-            id="rental">&nbsp;</a>
+        <a class="page-anchor" id="rental">&nbsp;</a>
         <section class="page rental prices">
             <div class="container">
                 <div class="row">
@@ -610,11 +543,11 @@
                                 </tr>
                                 <tr>
                                     <td>Celodenní</td>
-                                    <td>370</td>
+                                    <td>360</td>
                                 </tr>
                                 <tr>
                                     <td>Vícedenní (cena za 1 den)</td>
-                                    <td>300</td>
+                                    <td>320</td>
                                 </tr>
                                 <tr>
                                     <td>Půjčovné v rámci lyžařské školy (max 2 hodiny)</td>
@@ -656,8 +589,7 @@
                 </div>
             </div>
         </section>
-        <a class="page-anchor"
-            id="school">&nbsp;</a>
+        <a class="page-anchor" id="school">&nbsp;</a>
         <section class="page school prices">
             <div class="container">
                 <div class="row">
@@ -749,69 +681,49 @@
                     </div>
                 </div>
         </section>
-        <a class="page-anchor"
-            id="map">&nbsp;</a>
+        <a class="page-anchor" id="map">&nbsp;</a>
         <section class="page map">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h3>Kde nás najdete</h3>
-                        <div class="mt-2"
-                            id="map_container">
+                        <div class="mt-2" id="map_container">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <a class="page-anchor"
-            id="contact">&nbsp;</a>
+        <a class="page-anchor" id="contact">&nbsp;</a>
         <section class="page contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <h3>Napište nám</h3>
-                        <form id="contactForm"
-                            method="post">
+                        <form id="contactForm" method="post">
                             <div class="row">
                                 <div class="col-12" />
                                 <div class="form-group">
                                     <label for="nameInput">Jméno a příjmení</label>
-                                    <input type="text"
-                                        name="name"
-                                        class="form-control"
-                                        id="nameInput"
-                                        placeholder=""
+                                    <input type="text" name="name" class="form-control" id="nameInput" placeholder=""
                                         required />
                                 </div>
                                 <div class="form-group">
                                     <label for="emailInput">Email</label>
-                                    <input type="email"
-                                        name="email"
-                                        class="form-control"
-                                        id="emailInput"
-                                        placeholder=""
+                                    <input type="email" name="email" class="form-control" id="emailInput" placeholder=""
                                         required />
                                 </div>
                                 <div class="form-group">
                                     <label for="subjectSelect">Předmět zprávy</label>
-                                    <input type="text"
-                                        name="subject"
-                                        class="form-control"
-                                        id="subjectInput"
-                                        placeholder=""
-                                        required />
+                                    <input type="text" name="subject" class="form-control" id="subjectInput"
+                                        placeholder="" required />
                                 </div>
                                 <div class="form-group">
                                     <label for="noteInput">Text</label>
-                                    <textarea class="form-control"
-                                        name="message"
-                                        id="noteInput"
-                                        placeholder="Co máte na srdci?"
-                                        rows="5"></textarea>
+                                    <textarea class="form-control" name="message" id="noteInput"
+                                        placeholder="Co máte na srdci?" rows="5"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit"
-                                        class="btn btn-primary btn-lg btn-block submit">
+                                    <button type="submit" class="btn btn-primary btn-lg btn-block submit">
                                         Odeslat
                                     </button>
                                 </div>
@@ -878,35 +790,25 @@
             <div class="col-md-4 fcontainer partners">
                 <h5>Naši partneři</h5>
                 <div>
-                    <a class="lb"
-                        href="http://www.libereckabouda.cz">
+                    <a class="lb" href="http://www.libereckabouda.cz">
                         <img src="img/partners/lb.svg" />
                     </a>
-                    <a class="lipa"
-                        href="http://www.velkoobchodpapirem.cz">
+                    <a class="lipa" href="http://www.velkoobchodpapirem.cz">
                         <img src="img/partners/lipa.svg" />
                     </a>
-                    <a class="pema"
-                        href="http://www.velkoobchoddrogerie.cz">
+                    <a class="pema" href="http://www.velkoobchoddrogerie.cz">
                         <img src="img/partners/pema.svg" />
                     </a>
                 </div>
             </div>
         </div>
     </footer>
-    <div id="modal-info"
-        class="modal"
-        tabindex="-1"
-        role="dialog">
-        <div class="modal-dialog"
-            role="document">
+    <div id="modal-info" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title"></h5>
-                    <button type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -914,9 +816,7 @@
                     <p class="modal-text"></p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button"
-                        class="btn btn-primary"
-                        data-dismiss="modal">OK</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
@@ -936,12 +836,9 @@
     <script src="js/contact-form.js"></script>
     <script src="js/message.js"></script>
     <?php if (!isDevSite()) : ?>
-    <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikeys["map"]; ?>&callback=initMap"
-        async
+    <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $apikeys["map"]; ?>&callback=initMap" async
         defer></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo $apikeys["captcha-client"]; ?>"
-        async
-        defer>
+    <script src="https://www.google.com/recaptcha/api.js?render=<?php echo $apikeys["captcha-client"]; ?>" async defer>
     </script>
     <?php endif; ?>
 </body>
