@@ -104,8 +104,7 @@
                                 </tr>
                                 <tr>
                                     <td colspan="4" class="px-2 text-center h5 text-light bg-dark font-weight-bold">
-                                        Předpokládané spuštění areálu je
-                                        26. 12. 2022</td>
+                                        Areál je v provozu</td>
                                 </tr>
                                 <tr class="kotva">
                                     <td class="icon grey-bg">
@@ -672,7 +671,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="3">(+420) 705 950 116</td>
+                                            <td colspan="3">(+420) 733 530 050</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -747,7 +746,7 @@
                         <a href="http://www.skiareal-krkonose.cz">www.skiareal-krkonose.cz</a>
                     </li>
                     <li>Areál: (+420) 722 901 501</li>
-                    <li>Lyžařská škola: (+420) 705 950 116</li>
+                    <li>Lyžařská škola: (+420) 733 530 050</li>
                     <li>Půjčovna: (+420) 722 901 501</li>
                 </ul>
                 <div class="text-center text-lg-left">
