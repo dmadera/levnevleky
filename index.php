@@ -580,7 +580,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2">(+420) 722 901 501</td>
+                                    <td colspan="2">Půjčovna: (+420) 722 901 501</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -619,17 +619,17 @@
                                         </tr>
                                         <tr>
                                             <td>Děti (výuka + skipas)</td>
-                                            <td class="no-unit">1 hodina</td>
+                                            <td class="no-unit">1 hodina*</td>
                                             <td>490</td>
                                         </tr>
                                         <tr>
                                             <td>Dospělí (výuka + skipas)</td>
-                                            <td class="no-unit">1 hodina</td>
-                                            <td>390</td>
+                                            <td class="no-unit">1 hodina*</td>
+                                            <td>490</td>
                                         </tr>
                                         <tr>
                                             <td>Skupinová výuka</td>
-                                            <td class="no-unit">1 hodina</td>
+                                            <td class="no-unit">1 hodina*</td>
                                             <td class="no-unit">na dotaz</td>
                                         </tr>
                                         <tr>
@@ -639,6 +639,9 @@
                                         </tr>
                                         <tr>
                                             <th colspan="3">Doplňující informace</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">** Čistá doba výuky je 50 minut.</td>
                                         </tr>
                                         <tr>
                                             <td colspan="3">
@@ -671,7 +674,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td colspan="3">(+420) 733 530 050</td>
+                                            <td colspan="3">Lyžařská škola: (+420) 733 530 050</td>
                                         </tr>
                                     </tbody>
                                 </table>
